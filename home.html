@@ -1,0 +1,560 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- header stars here -->
+    <header class="bg-dark-blue">
+        <div class="container">
+            <div class="flex justify-between items-center h-[57px]">
+                <a href="home.html">
+                    <img src="assets/images/logo.png" alt="logo" />
+                </a>
+                <div id="navBar" class="flex flex-row items-center">
+                    
+                    <ul class="flex flex-row items-center menu">
+                        <!-- <li class="active hidden md:block">
+                            <a href="home.html">Home</a>
+                        </li> -->
+                        <li class="hidden md:block">
+                            <a href="javascript:;">About</a>
+                        </li>
+                        <li class="hidden md:block">
+                            <a href="javascript:;">Contact</a>
+                        </li>
+                        <li class="cart group">
+                            <a  href="javascript:;">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.75 0C0.551088 0 0.360322 0.0790178 0.21967 0.21967C0.0790178 0.360322 0 0.551088 0 0.75C0 0.948912 0.0790178 1.13968 0.21967 1.28033C0.360322 1.42098 0.551088 1.5 0.75 1.5H1.119C1.28186 1.50028 1.4402 1.55357 1.57009 1.6518C1.69999 1.75003 1.79438 1.88788 1.839 2.0445L4.218 10.3695C4.35255 10.8393 4.63641 11.2525 5.02665 11.5467C5.41689 11.8409 5.8923 12 6.381 12H13.2345C13.6843 12.0001 14.1237 11.8654 14.4962 11.6132C14.8686 11.3611 15.157 11.0031 15.324 10.5855L17.535 5.0565C17.6259 4.82899 17.6597 4.58268 17.6334 4.3391C17.6071 4.09551 17.5216 3.86208 17.3842 3.65919C17.2469 3.4563 17.062 3.29014 16.8456 3.17523C16.6292 3.06032 16.388 3.00015 16.143 3H3.672L3.2805 1.632C3.14629 1.16216 2.86277 0.748779 2.47281 0.454345C2.08285 0.15991 1.60763 0.000426552 1.119 0H0.75Z"/>
+                                    <path d="M6.75 18C7.04547 18 7.33806 17.9418 7.61104 17.8287C7.88402 17.7157 8.13206 17.5499 8.34099 17.341C8.54992 17.1321 8.71566 16.884 8.82873 16.611C8.9418 16.3381 9 16.0455 9 15.75C9 15.4545 8.9418 15.1619 8.82873 14.889C8.71566 14.616 8.54992 14.3679 8.34099 14.159C8.13206 13.9501 7.88402 13.7843 7.61104 13.6713C7.33806 13.5582 7.04547 13.5 6.75 13.5C6.15326 13.5 5.58097 13.7371 5.15901 14.159C4.73705 14.581 4.5 15.1533 4.5 15.75C4.5 16.3467 4.73705 16.919 5.15901 17.341C5.58097 17.7629 6.15326 18 6.75 18Z" />
+                                    <path d="M12.75 18C13.0455 18 13.3381 17.9418 13.611 17.8287C13.884 17.7157 14.1321 17.5499 14.341 17.341C14.5499 17.1321 14.7157 16.884 14.8287 16.611C14.9418 16.3381 15 16.0455 15 15.75C15 15.4545 14.9418 15.1619 14.8287 14.889C14.7157 14.616 14.5499 14.3679 14.341 14.159C14.1321 13.9501 13.884 13.7843 13.611 13.6713C13.3381 13.5582 13.0455 13.5 12.75 13.5C12.1533 13.5 11.581 13.7371 11.159 14.159C10.7371 14.581 10.5 15.1533 10.5 15.75C10.5 16.3467 10.7371 16.919 11.159 17.341C11.581 17.7629 12.1533 18 12.75 18Z" />
+                                </svg>
+                                <span class="counter">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- hero section starts here -->
+    <section class="bg-light-gray">
+        <div class="container">
+            <div class="max-w-[743px] mx-auto w-full text-center">
+                <p class="text-[16px] md:text-[18px] text-font-gray mb-[5px] md:mb-[18px]">Know Your Customers, Suppliers, Partners and Competitors</p>
+                <h1 class="text-h1-md md:text-h1 font-bold mb-[30px] md:mb-[47px]">Incorporation and shareholding details of registered private companies </h1>
+                <div class="relative mb-[18px] md:mb-[28px]">
+                    <div id="slideNext" class="slide-next">
+                        <img src="assets/images/next.svg" alt="next"/>
+                    </div>
+                    <ul id="slider" class="flex overflow-x-scroll overflow-y-hidden md:overflow-visible hide-scroll relative top-[2px] md:top-0">
+                        <li>
+                            <div class="search-list">
+                                <input class="hidden" type="radio" name="company-search" id="all" checked/>
+                                <label for="all">All</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="search-list">
+                                <input class="hidden" type="radio" name="company-search" id="singapore"/>
+                                <label for="singapore">Singapore</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="search-list">
+                                <input class="hidden" type="radio" name="company-search" id="indonesia"/>
+                                <label for="indonesia">Indonesia</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="search-list">
+                                <input class="hidden" type="radio" name="company-search" id="vietnam"/>
+                                <label for="vietnam">Vietnam</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="search-list">
+                                <input class="hidden" type="radio" name="company-search" id="philippines"/>
+                                <label for="philippines">Philippines</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="search-list">
+                                <input class="hidden" type="radio" name="company-search" id="malaysia"/>
+                                <label for="malaysia">Malaysia</label>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="search-box">
+                        <input id="search" type="text" placeholder="Search company name here..." autocomplete="off">
+                        <button class="submit-search" type="submit">Search</button>
+                      
+                        <div id="result" class="search-results hidden">
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">
+                                       <h5>lorem ipsum lorem ipsum lorem  ipsum lorem   </h5>
+                                       <div class="badge">
+                                           <img src="assets/images/flag/indonesia.svg" alt=""> Indonesia
+                                       </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                       <h5>lorem ipsum lorem ipsum lorem     </h5>
+                                       <div class="badge">
+                                           <img src="assets/images/flag/china.svg" alt=""> China
+                                       </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                       <h5>lorem ipsum lorem ipsum lorem  lorem ipsum</h5>
+                                       <div class="badge">
+                                           <img src="assets/images/flag/hongkong.svg" alt=""> Hong Kong
+                                       </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                       <h5>lorem ipsum lorem ipsum lorem  </h5>
+                                       <div class="badge">
+                                           <img src="assets/images/flag/india.svg" alt=""> India
+                                       </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                       <h5>lorem ipsum lorem ipsum lorem   </h5>
+                                       <div class="badge">
+                                           <img src="assets/images/flag/singapore.svg" alt=""> Singapore
+                                       </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                       <h5>lorem ipsum lorem ipsum lorem   </h5>
+                                       <div class="badge">
+                                           <img src="assets/images/flag/malaysia.svg" alt=""> Malaysia
+                                       </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                       <h5>lorem ipsum lorem ipsum lorem   </h5>
+                                       <div class="badge">
+                                           <img src="assets/images/flag/brazil.svg" alt=""> brazil
+                                       </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                       <h5>lorem ipsum lorem ipsum lorem   </h5>
+                                       <div class="badge">
+                                           <img src="assets/images/flag/vietnam.svg" alt=""> vietnam
+                                       </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                       <h5>lorem ipsum lorem ipsum lorem  lorem ipsum</h5>
+                                       <div class="badge">
+                                           <img src="assets/images/flag/hongkong.svg" alt=""> Hong Kong
+                                       </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                       <h5>lorem ipsum lorem ipsum lorem  </h5>
+                                       <div class="badge">
+                                           <img src="assets/images/flag/india.svg" alt=""> India
+                                       </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                       <h5>lorem ipsum lorem ipsum lorem   </h5>
+                                       <div class="badge">
+                                           <img src="assets/images/flag/singapore.svg" alt=""> Singapore
+                                       </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                 <a class="link-text md:text-[18px] mb-[4px] md:mb-[24px]" href="javascript:;">Can’t search company name in any country ? Lets us know</a>
+            </div>
+        </div>
+    </section>
+    <!-- section starts here -->
+    <section>
+        <div class="container">
+            <div class="xl:px-[90px]">
+                <h2 class="h2 text-center mb-[10px]">Get latest company data directly from first hand sources </h2>
+                <p class="text-para-md md:text-para text-center text-font-gray mb-[35px] md:mb-[85px]">Our experience is in to provide desired info regarding company registry info, company incorporation or business or financial information to our clients. We obtain registry copies of company documents and conduct comprehensive Indonesia company searches. </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-[50px] gap-y-[25px] md:gap-y-[50px] xl:gap-y-[82px] mb-[10px] md:mb-[30px]">
+                    <div class="flex">
+                        <div class="mr-[20px] min-w-[38px] md:min-w-[48px]">
+                            <img src="assets/images/testing.png" alt="image"/>
+                        </div>
+                        <div>
+                            <h3 class="text-[16px] md:text-[20px] mb-[6px] md:mb-[10px] font-semibold">Know about complete company details </h3>
+                            <p class="paragraph">Know the ownership of the company, capital and extended history of the company, along with shareholding pattern. </p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="mr-[20px] min-w-[38px] md:min-w-[48px]">
+                            <img src="assets/images/search.png" alt="image"/>
+                        </div>
+                        <div>
+                            <h3 class="text-[16px] md:text-[20px] mb-[6px] md:mb-[10px] font-semibold">Company data and corporate structure </h3>
+                            <p class="paragraph">Know if company has been active or not, past fillings, changes in corportae structure and capital infusion</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="mr-[20px] min-w-[38px] md:min-w-[48px]">
+                            <img src="assets/images/crowdfunding.png" alt="image"/>
+                        </div>
+                        <div>
+                            <h3 class="text-[16px] md:text-[20px] mb-[6px] md:mb-[10px] font-semibold">Extended history of changes in shareholding </h3>
+                            <p class="paragraph">Incorporated companies go though various changes in data, shareholding pattern, capital and structure time to time. </p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="mr-[20px] min-w-[38px] md:min-w-[48px]">
+                            <img src="assets/images/report.png" alt="image"/>
+                        </div>
+                        <div>
+                            <h3 class="text-[16px] md:text-[20px] mb-[6px] md:mb-[10px] font-semibold">Amendments in corporate structure and data </h3>
+                            <p class="paragraph">Various amaendments along with change in board of directors, representatives, ownership and capital investment </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section starts here -->
+    <section class="bg-light-gray">
+        <div class="container">
+            <div class="xl:px-[20px] mt-[5px] md:mt-[20px]">
+                <h2 class="text-h2-md md:text-h2  font-bold text-center mb-[10px]">Know what are types of company reports, cross checked, translated and verified</h2>
+                <p class="text-para-md md:text-para text-center text-font-gray mb-[30px] md:mb-[70px]">Most advanced and upto date platform for complete company information. Since 2014, we provides complete company details, shareholding details and incorporation changes and updates for all the events happening in the company over the year.</p>
+                <div class="flex flex-col lg:flex-row items-center mb-[5px] md:mb-[20px]">
+                    <img class="max-w-full lg:max-w-[40%]  xl:max-w-full mr-0 lg:mr-[68px] mb-[20px] lg:mb-0" src="assets/images/companiesfacts1.png" alt="facts"/>
+                    <div class="flex flex-col">
+                        <h2 class="h2  mb-[10px]">Company information and status</h2>
+                        <p class="paragraph mb-[20px] md:mb-[33px]">If the company is active or defunt or in arbitration (i.e. under company law tribunal due to any conflict) and other basic details.</p>        
+                        <div class="flex mb-[20px] md:mb-[40px]">
+                            <div class="min-w-[22px] md:min-w-[32px] mr-[10px] md:mr-[20px]">
+                                <img src="assets/images/point.png" alt="point"/>
+                            </div>
+                            <div>
+                                <h3 class="text-[16px] md:text-[18px] leading-[22px] md:leading-[28px] font-medium mb-[6px] md:mb-[10px]">Status of the company: find out if it exists and is active</h3>
+                                <p class="paragraph">Companies are active and in some cases non-active or struck down due to arbitrations or under jurisdiction, and/or for other reasons</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-[20px] md:mb-[40px]">
+                            <div class="min-w-[22px] md:min-w-[32px] mr-[10px] md:mr-[20px]">
+                                <img src="assets/images/point.png" alt="point"/>
+                            </div>
+                            <div>
+                                <h3 class="text-[16px] md:text-[18px] leading-[22px] md:leading-[28px] font-medium mb-[6px] md:mb-[10px]">Date of last deed, Registered Address</h3>
+                                <p class="paragraph">The deed of incorporation, certificate, founders details, shareholders, equity and address it formally holds.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="min-w-[22px] md:min-w-[32px] mr-[10px] md:mr-[20px]">
+                                <img src="assets/images/point.png" alt="point"/>
+                            </div>
+                            <div>
+                                <h3 class="text-[16px] md:text-[18px] leading-[22px] md:leading-[28px] font-medium mb-[6px] md:mb-[10px]">Company type and classification</h3>
+                                <p class="paragraph">Category of business, sub-category, objective, types, and purpose under which company operates as per the deed of incorporation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section starts here -->
+    <section>   
+        <div class="container">
+            <div class="xl:px-[20px] mt-[5px] md:mt-[20px]">
+                 <div class="flex flex-col lg:flex-row items-center mb-[5px] md:mb-[20px]">
+                    <img class="max-w-full lg:max-w-[40%]  xl:max-w-full mr-0 lg:mr-[68px] mb-[20px] lg:mb-0" src="assets/images/companiesfacts2.png" alt="facts"/>
+                    <div class="flex flex-col">
+                        <h2 class="h2  mb-[10px]">Financial, shareholding pattern and changes</h2>
+                        <p class="paragraph mb-[20px] md:mb-[33px]">Complete list of company's shareholders, directors and representatives along with capital structure and over all company’s capital since incorporation</p>        
+                        <div class="flex mb-[20px] md:mb-[40px]">
+                            <div class="min-w-[22px] md:min-w-[32px] mr-[10px] md:mr-[20px]">
+                                <img src="assets/images/point.png" alt="point"/>
+                            </div>
+                            <div>
+                                <h3 class="text-[16px] md:text-[18px] leading-[22px] md:leading-[28px] font-medium mb-[6px] md:mb-[10px]">Total Capital </h3>
+                                <p class="paragraph">Suggested authorized capital and capital seeded. Number of shares alotted to each one of shareholders, price each share.  </p>
+                            </div>
+                        </div>
+                        <div class="flex mb-[20px] md:mb-[40px]">
+                            <div class="min-w-[22px] md:min-w-[32px] mr-[10px] md:mr-[20px]">
+                                <img src="assets/images/point.png" alt="point"/>
+                            </div>
+                            <div>
+                                <h3 class="text-[16px] md:text-[18px] leading-[22px] md:leading-[28px] font-medium mb-[6px] md:mb-[10px]">Number of Shareholders</h3>
+                                <p class="paragraph">A list of shareholders in company and shares each of them owns + what has been changed over the period of time. </p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="min-w-[22px] md:min-w-[32px] mr-[10px] md:mr-[20px]">
+                                <img src="assets/images/point.png" alt="point"/>
+                            </div>
+                            <div>
+                                <h3 class="text-[16px] md:text-[18px] leading-[22px] md:leading-[28px] font-medium mb-[6px] md:mb-[10px]">Local resident Directors or representatives </h3>
+                                <p class="paragraph">A list of Directors, representatives, ownership and who owns how many shares  (or do not own) shares in the company. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section starts here -->
+    <section class="bg-light-gray">
+        <div class="container">
+            <div class="xl:px-[20px] mt-[5px] md:mt-[20px]">
+                 <div class="flex flex-col lg:flex-row items-top mb-[5px] md:mb-[20px]">
+                    <img class="max-w-full lg:max-w-[40%]  xl:max-w-full mr-0 lg:mr-[68px] mb-[20px] self-center lg:mb-0" src="assets/images/companiesfacts3.png" alt="facts"/>
+                    <div class="flex flex-col">
+                        <h2 class="h2  mb-[10px]">Corporate structure changes and history</h2>
+                        <p class="paragraph mb-[20px] md:mb-[33px]">The detailed view of company information report. This provides changes in the company's deed in its history so far.</p>        
+                        <div class="flex mb-[20px] md:mb-[40px]">
+                            <div class="min-w-[22px] md:min-w-[32px] mr-[10px] md:mr-[20px]">
+                                <img src="assets/images/point.png" alt="point"/>
+                            </div>
+                            <div>
+                                <h3 class="text-[16px] md:text-[18px] leading-[22px] md:leading-[28px] font-medium mb-[6px] md:mb-[10px]">Changes in corporate structure</h3>
+                                <p class="paragraph">Companies are active and in some cases non-active or struck down due to arbitrations or under jurisdiction, and/or for other reasons</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="min-w-[22px] md:min-w-[32px] mr-[10px] md:mr-[20px]">
+                                <img src="assets/images/point.png" alt="point"/>
+                            </div>
+                            <div>
+                                <h3 class="text-[16px] md:text-[18px] leading-[22px] md:leading-[28px] font-medium mb-[6px] md:mb-[10px]">Changes in  capital and  investments</h3>
+                                <p class="paragraph">The deed of incorporation, certificate, founders details, shareholders, equity and address it formally holds.</p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section starts here -->
+    <section>
+        <div class="container">
+            <div class="xl:px-[20px]">
+                <h2 class="h2 text-center mb-[20px] md:mb-[60px]">Values Company Reports Provide</h2> 
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-[30px] xl:gap-x-[73px] gap-y-[20px] md:gap-y-[30px] lg:gap-y-0 mb-[10px] md:mb-[50px]">
+                    <div class="col-box">
+                        <img class="mb-[18px]" src="assets/images/x-ray.png" alt="thumb"/>
+                        <h4 class="text-[16px] md:text-[18px] font-bold mb-[8px]">Due Deligence</h4>
+                        <p class="paragraph"> To establish its assets and liabilities and evaluate its commercial potential.</p>
+                    </div>
+                    <div class="col-box">
+                        <img class="mb-[18px]" src="assets/images/business-credit-report.png" alt="thumb"/>
+                        <h4 class="text-[16px] md:text-[18px] font-bold mb-[8px]">Credit Report</h4>
+                        <p class="paragraph"> Compilation of Loan, credit from lenders into one credit report.</p>
+                    </div>
+                    <div class="col-box">
+                        <img class="mb-[18px]" src="assets/images/investment.png" alt="thumb"/>
+                        <h4 class="text-[16px] md:text-[18px] font-bold mb-[8px]">Investment Decisions</h4>
+                        <p class="paragraph"> Based on Changes in capital and  investments infusion, settlement, arbitrtions etc.</p>
+                    </div>
+                    <div class="col-box">
+                        <img class="mb-[18px]" src="assets/images/history.png" alt="thumb"/>
+                        <h4 class="text-[16px] md:text-[18px] font-bold mb-[8px]">Company History</h4>
+                        <p class="paragraph"> The detailed view of  changes in the company's deed in its history so far.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section starts here -->
+    <section class="bg-light-gray">
+        <div class="container">
+            <div class="xl:px-[20px] text-center">
+                <h2 class="h2  mb-[10px] md:mb-[20px]">What if I can’t find a company ?</h2>
+                <p class="paragraph">The most common reason is that the company is either not registered, uses a different name or was registered very recently (before our last indexing). However, in some rare cases there might be a technical glitch that prevents the company from showing up in the search results. Reach out to us at <a class="underline text-[#1D4ED8] font-medium" target="_blank" href="mailto:team@companiesfacts.com">team@companiesfacts.com</a> and we will try to find the company for you manually</p> 
+            </div>
+        </div>
+    </section>
+    <!-- footer stars here -->
+    <footer class="bg-dark-blue py-[20px]">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-footer-md lg:grid-cols-footer-lg xl:grid-cols-footer-xl 2xl:grid-cols-footer gap-x-[30px] xl:gap-x-[70px] 2xl:gap-x-[90px] gap-y-[40px]">
+                <div class="order-5 2xl:order-1 col-span-1 md:col-span-5 2xl:col-span-1">
+                    <a href="home.html">
+                        <img class="mb-[18px]" src="assets/images/logo.png" alt="logo"/>
+                    </a>
+                    <p class="text-[#F9FAFB] text-[15px] leading-[21px] mb-[20px]">Companyfacts.com is a privately held company. We strive to provide verified company registration details, information like company size, shareholders, structure, financial performance, credit-worthiness, rating, risk assessment, patents, certifications, legal case or arbitration, company KYC, company performance analysis, and overall due diligence.</p>
+                    <ul class="flex mt-[30px] mb-[30px] xl:hidden">
+                        <li class="mr-[36px]">
+                            <a class="duration-200 hover:opacity-80" href="javascript:;">
+                                <img src="assets/images/social/Insta.svg" alt="social"/>
+                            </a>
+                        </li>
+                        <li class="mr-[36px]">
+                            <a class="duration-200 hover:opacity-80" href="javascript:;">
+                                <img src="assets/images/social/Twitter.svg" alt="social"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="duration-200 hover:opacity-80" href="javascript:;">
+                                <img src="assets/images/social/Facebook.svg" alt="social"/>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="text-[#D4D4D4] text-[14px] leading-[22px] font-light">© 2022 companiesfacts.com -  All Rights Reserved </p>
+                </div>
+                <div class="order-2 2xl:order-2 flex flex-col">
+                    <h4 class="mb-[20px] text-[#9CA3AF] text-[18px]">Location</h4>
+                    <p class="text-[#F9FAFB] text-[15px] leading-[28px] mb-[20px]">9110 Av Pierre De Coubertin <br/>Montreal QC H1L 2H3Canada  </p>
+                    <ul class="hidden 2xl:flex justify-between mt-auto ">
+                        <li>
+                            <a class="duration-200 hover:opacity-80" href="javascript:;">
+                                <img src="assets/images/social/Insta.svg" alt="social"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="duration-200 hover:opacity-80" href="javascript:;">
+                                <img src="assets/images/social/Twitter.svg" alt="social"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="duration-200 hover:opacity-80" href="javascript:;">
+                                <img src="assets/images/social/Facebook.svg" alt="social"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-1 2xl:order-3 flex flex-col">
+                    <h4 class="mb-[20px] text-[#9CA3AF] text-[18px]">Contact</h4>
+                    <ul>
+                        <li class="mb-[15px]">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="mailto:team@companiesfacts.com">
+                                <img class="mr-[13px]" src="assets/images/contact/email.svg" alt="contact"/> team@companiesfacts.com
+                            </a>
+                        </li>
+                        <li class="mb-[15px]">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                <img class="mr-[13px]" src="assets/images/contact/instant.svg" alt="contact"/> 24 x 7 (Instant Reply)
+                            </a>
+                        </li>
+                        <li class="mb-[15px]">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                <img class="mr-[13px]" src="assets/images/contact/watsapp.svg" alt="contact"/> +91-95603-30483
+                            </a>
+                        </li>
+                        <li class="mb-[15px]">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                <img class="mr-[13px]" src="assets/images/contact/call.svg" alt="contact"/> +91-95603-30483 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-3 2xl:order-4 flex flex-col">
+                    <h4 class="mb-[20px] text-[#9CA3AF] text-[18px]">Markets</h4>
+                    <ul class="flex 2xl:block flex-wrap">
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 2xl:w-full">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                <img class="mr-[9px]" src="assets/images/flag/indonesia.svg" alt="contact"/> Indonesia
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 2xl:w-full">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                <img class="mr-[9px]" src="assets/images/flag/vietnam.svg" alt="contact"/> Vietnam
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 2xl:w-full">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                <img class="mr-[9px]" src="assets/images/flag/singapore.svg" alt="contact"/> Singapore
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 2xl:w-full">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                <img class="mr-[9px]" src="assets/images/flag/malaysia.svg" alt="contact"/> Malaysia
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 2xl:w-full">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                <img class="mr-[9px]" src="assets/images/flag/philippines.svg" alt="contact"/> Philippines
+                            </a>
+                        </li>
+                         
+                    </ul>
+                </div>
+                <div class="order-4 2xl:order-5 flex flex-col">
+                    <h4 class="mb-[20px] text-[#9CA3AF] text-[18px]">About</h4>
+                    <ul class="flex xl:block flex-wrap">
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 2xl:w-full">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                About us
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 2xl:w-full">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                Contact us
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 2xl:w-full">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 2xl:w-full">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                T&C
+                            </a>
+                        </li>
+                      
+                         
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+     
+   <script>
+    $(document).ready(function(){
+        if ($("#slideNext").length > 0) { 
+                $("#slideNext").click(function(){
+                $("#slider").scrollLeft(300);
+                $(this).hide();
+            });
+        }
+        if ($("#search").length > 0) { 
+                $("#search").focus(function(){
+                    $("#result").removeClass("hidden");
+                }).blur(function(){
+                    $("#result").addClass("hidden");
+                })
+             }
+    });
+    </script>
+
+</body>
+
+</html>
