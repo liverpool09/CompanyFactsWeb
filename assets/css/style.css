@@ -672,10 +672,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 20px;
 }
 
-.gap-y-\[40px\]{
-  row-gap: 40px;
-}
-
 .self-center{
   align-self: center;
 }
@@ -1144,10 +1140,9 @@ section{
   cursor: pointer;
   align-items: center;
   justify-content: flex-end;
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  --tw-gradient-from: transparent;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(0 0 0 / 0));
-  --tw-gradient-to: #F5F5F5;
+  background-image: linear-gradient(to left, var(--tw-gradient-stops));
+  --tw-gradient-from: #F5F5F5;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(245 245 245 / 0));
 }
 
 @media (min-width: 768px){
@@ -1404,6 +1399,10 @@ section{
 
   .md\:gap-y-\[30px\]{
     row-gap: 30px;
+  }
+
+  .md\:gap-y-\[40px\]{
+    row-gap: 40px;
   }
 
   .md\:overflow-visible{

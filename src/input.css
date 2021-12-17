@@ -109,7 +109,7 @@ section {
 
 
 .slide-next {
-    @apply bg-gradient-to-r from-transparent to-light-gray absolute w-[50px] h-[30px] top-[7px] right-0 z-10 flex items-center justify-end cursor-pointer block md:hidden;
+    @apply bg-gradient-to-l  from-light-gray absolute w-[50px] h-[30px] top-[7px] right-0 z-10 flex items-center justify-end cursor-pointer md:hidden;
 }
 .search-results {
     @apply absolute top-[56px] md:top-[60px] inset-x-[-2px] md:inset-x-[-4px] border border-[#9CA3AF] bg-white z-20;
@@ -124,7 +124,7 @@ section {
 }
 
 .search-results > ul > li > a { 
-    @apply flex px-[15px] py-[9px] md:py-[12px] flex duration-200 hover:bg-light-white;
+    @apply flex px-[15px] py-[9px] md:py-[12px] duration-200 hover:bg-light-white;
 }
 
 .search-results > ul > li > a > h5 {
