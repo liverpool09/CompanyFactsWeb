@@ -45,7 +45,6 @@ module.exports = {
             },
             gridTemplateColumns: {
                 'footer': 'auto 192px 218px 117px 106px', 
-                'footer-xl': '192px 218px 250px 230px',
                 'footer-lg': '192px 218px 270px 230px', 
                 'footer-md': '202px 200px 110px 110px', 
                  

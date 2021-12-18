@@ -606,8 +606,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 57px;
 }
 
+.w-\[139px\]{
+  width: 139px;
+}
+
 .w-full{
   width: 100%;
+}
+
+.w-\[153px\]{
+  width: 153px;
 }
 
 .w-1\/2{
@@ -1373,6 +1381,14 @@ section{
     display: block;
   }
 
+  .md\:w-\[210px\]{
+    width: 210px;
+  }
+
+  .md\:w-\[167px\]{
+    width: 167px;
+  }
+
   .md\:w-full{
     width: 100%;
   }
@@ -1472,6 +1488,30 @@ section{
 }
 
 @media (min-width: 1280px){
+  .xl\:order-1{
+    order: 1;
+  }
+
+  .xl\:order-2{
+    order: 2;
+  }
+
+  .xl\:order-3{
+    order: 3;
+  }
+
+  .xl\:order-4{
+    order: 4;
+  }
+
+  .xl\:order-5{
+    order: 5;
+  }
+
+  .xl\:col-span-1{
+    grid-column: span 1 / span 1;
+  }
+
   .xl\:block{
     display: block;
   }
@@ -1480,12 +1520,16 @@ section{
     display: none;
   }
 
+  .xl\:w-full{
+    width: 100%;
+  }
+
   .xl\:max-w-full{
     max-width: 100%;
   }
 
-  .xl\:grid-cols-footer-xl{
-    grid-template-columns: 192px 218px 250px 230px;
+  .xl\:grid-cols-footer{
+    grid-template-columns: auto 192px 218px 117px 106px;
   }
 
   .xl\:gap-y-\[82px\]{
@@ -1500,6 +1544,11 @@ section{
   .xl\:gap-x-\[70px\]{
     -moz-column-gap: 70px;
          column-gap: 70px;
+  }
+
+  .xl\:gap-x-\[50px\]{
+    -moz-column-gap: 50px;
+         column-gap: 50px;
   }
 
   .xl\:px-\[90px\]{
@@ -1548,10 +1597,6 @@ section{
 
   .\32xl\:w-full{
     width: 100%;
-  }
-
-  .\32xl\:grid-cols-footer{
-    grid-template-columns: auto 192px 218px 117px 106px;
   }
 
   .\32xl\:gap-x-\[90px\]{
