@@ -14,6 +14,9 @@ module.exports = {
             'font-gray': '#525252',
             'light-gray': '#F5F5F5',
             'light-white': '#F9FAFB',
+            'blue-gray': '#94A3B8',
+            'light-green': 'rgba(13, 148, 136, 0.05)',
+            'backdrop': 'rgba(23, 23, 23, 0.8)',
         },
         fontSize: {
             'h1': ['34px', {
@@ -47,7 +50,11 @@ module.exports = {
                 'footer': 'auto 192px 218px 117px 106px', 
                 'footer-lg': '192px 218px 270px 230px', 
                 'footer-md': '202px 200px 110px 110px', 
-                 
+            },
+            backgroundImage: {        
+                'arrow': "url('../../assets/images/arrow.svg')",
+                'check': "url('../../assets/images/check.svg')",
+                'checked': "url('../../assets/images/checked.svg')",
             },
         } 
     },

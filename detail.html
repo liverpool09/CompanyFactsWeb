@@ -1,0 +1,533 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Details</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    
+    <!-- subscribe modal here -->
+
+    <div id="subscribe" data-dismiss="subscribe"  class="modal duration-200 flex fixed inset-0 bg-backdrop transition-opacity z-50 overflow-hidden items-center justify-center p-[20px]">
+        <div class="bg-[#F8FAFC] border border-[#CBD5E1] px-[20px] md:px-[40px] py-[20px] w-full max-w-[500px] ">
+            <h3 class="text-[17px] mb-[18px] font-bold">Stay updated. Subscribe to:  </h3>
+            <p class="text-[16px] leading-[20px] text-[#737373] mb-[18px]">PT. Sera Imega Sera  Imega Sera Imega Sera Imega Sera Imega Sera Imega Sera indonesia Imega Sera Sera Sera</p>
+            <h4 class="text-[14px] font-light text-[#854D0E] mb-[15px]">We will update you by email when more information is available</h4>
+            <div class="flex h-[36px] border border-[#D1D5DB] bg-white px-[6px] items-center justify-between rounded-[4px] mb-[10px]">
+                <input type="text" class="text-[14px] bg-white flex-grow ml-[5px] focus:outline-none" placeholder="Your email id">
+                <button class="text-[14px] text-white bg-theme-green duration-200 hover:bg-theme-green-hovered text-center w-[92px] h-[26px] rounded-[4px] font-medium min-w-[92px]">Subscribe</button>
+            </div>
+            <span class="text-[12px] text-[#F87171]">Oops! Please mention correct email id </span>
+        </div>
+    </div>
+
+    <!-- delivery report modal here -->
+
+    <div id="report" data-dismiss="report"  class="modal duration-200 flex fixed inset-0 bg-backdrop transition-opacity z-50 overflow-hidden items-center justify-center p-[20px]">
+        <div class="bg-[#F8FAFC] border border-[#CBD5E1] px-[20px] md:px-[40px] py-[20px] w-full max-w-[500px] ">
+            <h3 class="text-[17px] mb-[18px] font-bold text-[#535AFF]">Important points to note regarding delivery of reports: </h3>
+            <p class="text-[14px] leading-[17px] text-[#737373] mb-[18px]">
+                You will receive the official report in native country language, along with <span class="font-semibold">English translated</span>  version by email within 24 hours of business working day. <br/><br/> 
+                If company incorporation detail/reports is  <span class="font-semibold">not found</span>, we will refund within 24 hours. (happens in very rare cases due to pending arbitration, thus it becomes inaccessible in database even if company registration number exists). <br/><br/> 
+                
+                For any other info or question, please <a class="text-[#535AFF]" href="javascript:;">connect with us</a> </p>
+             
+        </div>
+    </div>
+
+    <!-- header stars here -->
+    <header class="bg-dark-blue">
+        <div class="container">
+            <div class="flex justify-between items-center h-[57px]">
+                <a href="home.html">
+                    <img class="w-[139px] md:w-[210px]" src="assets/images/logo.png" alt="logo" />
+                </a>
+                <div id="navBar" class="flex flex-row items-center">
+                    <div class="search-sm">
+                        <div class="search-sm-select">
+                            <select>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Vietnam">Vietnam</option>
+                                <option value="Philippines">Philippines</option>
+                                <option value="Malaysia">Malaysia</option>
+                            </select>
+                        </div>
+                        <div class="search-sm-box">
+                            <img src="assets/images/search.svg" alt="search">
+                            <input type="text" placeholder="type company name">
+                        </div>
+                    </div>
+                    <ul class="flex flex-row items-center menu">
+                        <!-- <li class="active hidden md:block">
+                            <a href="home.html">Home</a>
+                        </li> -->
+                        <li class="hidden md:block">
+                            <a href="javascript:;">About</a>
+                        </li>
+                        <li class="hidden md:block">
+                            <a href="javascript:;">Contact</a>
+                        </li>
+                        <li class="cart group cart-active">
+                            <a  href="javascript:;">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.75 0C0.551088 0 0.360322 0.0790178 0.21967 0.21967C0.0790178 0.360322 0 0.551088 0 0.75C0 0.948912 0.0790178 1.13968 0.21967 1.28033C0.360322 1.42098 0.551088 1.5 0.75 1.5H1.119C1.28186 1.50028 1.4402 1.55357 1.57009 1.6518C1.69999 1.75003 1.79438 1.88788 1.839 2.0445L4.218 10.3695C4.35255 10.8393 4.63641 11.2525 5.02665 11.5467C5.41689 11.8409 5.8923 12 6.381 12H13.2345C13.6843 12.0001 14.1237 11.8654 14.4962 11.6132C14.8686 11.3611 15.157 11.0031 15.324 10.5855L17.535 5.0565C17.6259 4.82899 17.6597 4.58268 17.6334 4.3391C17.6071 4.09551 17.5216 3.86208 17.3842 3.65919C17.2469 3.4563 17.062 3.29014 16.8456 3.17523C16.6292 3.06032 16.388 3.00015 16.143 3H3.672L3.2805 1.632C3.14629 1.16216 2.86277 0.748779 2.47281 0.454345C2.08285 0.15991 1.60763 0.000426552 1.119 0H0.75Z"/>
+                                    <path d="M6.75 18C7.04547 18 7.33806 17.9418 7.61104 17.8287C7.88402 17.7157 8.13206 17.5499 8.34099 17.341C8.54992 17.1321 8.71566 16.884 8.82873 16.611C8.9418 16.3381 9 16.0455 9 15.75C9 15.4545 8.9418 15.1619 8.82873 14.889C8.71566 14.616 8.54992 14.3679 8.34099 14.159C8.13206 13.9501 7.88402 13.7843 7.61104 13.6713C7.33806 13.5582 7.04547 13.5 6.75 13.5C6.15326 13.5 5.58097 13.7371 5.15901 14.159C4.73705 14.581 4.5 15.1533 4.5 15.75C4.5 16.3467 4.73705 16.919 5.15901 17.341C5.58097 17.7629 6.15326 18 6.75 18Z" />
+                                    <path d="M12.75 18C13.0455 18 13.3381 17.9418 13.611 17.8287C13.884 17.7157 14.1321 17.5499 14.341 17.341C14.5499 17.1321 14.7157 16.884 14.8287 16.611C14.9418 16.3381 15 16.0455 15 15.75C15 15.4545 14.9418 15.1619 14.8287 14.889C14.7157 14.616 14.5499 14.3679 14.341 14.159C14.1321 13.9501 13.884 13.7843 13.611 13.6713C13.3381 13.5582 13.0455 13.5 12.75 13.5C12.1533 13.5 11.581 13.7371 11.159 14.159C10.7371 14.581 10.5 15.1533 10.5 15.75C10.5 16.3467 10.7371 16.919 11.159 17.341C11.581 17.7629 12.1533 18 12.75 18Z" />
+                                </svg>
+                                <span class="counter">3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- detail section starts here -->
+    <section class="bg-light-gray detail-section">
+        <div class="container container-xs-20">
+             <ul class="breadcrumb mb-[15px] md:mb-[23px]">
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a class="" href="home.html">Brazil companies search</a>
+                </li>
+                <li>
+                    Petronet It Solutions LTDA
+                </li>
+             </ul>
+             <h2 class="text-[20px] md:text-[22px] font-bold mb-0 md:mb-[5px]">Petronet It Solutions LTDA</h2>
+             <p class="text-[14px] text-blue-gray mb-[20px]">A Limited Liability Company incorporated in Brazil</p>
+             <div class="grid gap-x-[25px] xl:gap-x-[37px] grid-cols-1 lg:grid-cols-[auto_400px] xl:grid-cols-[auto_529px] items-start">
+                 <div>
+                    <div class="bg-white border border-[#D4D4D4] px-[15px] md:px-[27px] py-[20px] mb-[25px]">
+                        <div class="flex flex-col md:flex-row border-b border-[#A3A3A3] mb-[32px]">
+                            <div>
+                                <h4 class="text-[16px] font-bold mb-[6px]">Company Registration Information</h4>
+                                <p class="text-[14px] text-blue-gray mb-[10px] md:mb-[20px]">About Petronet It Solutions LTDA, Brazil</p>
+                            </div>
+                            <div class="md:ml-auto mb-[20px] md:mb-0">
+                                <button data-modal="subscribe" class="border border-theme-green text-[14px] flex w-[111px] h-[28px] items-center text-theme-green justify-center rounded-[4px]"><img class="mr-[6px]" src="assets/images/subscibe.svg" alt="icon"/> Subscribe</button>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-[25px] xl:gap-x-[140px] gap-y-[20px] md:gap-y-[43px]">
+                            <div class="detail-list">
+                                <h5>CNPJ</h5>
+                                <h4>03.115.362/0001-16 - 0311536200116</h4>
+                            </div>
+                            <div class="detail-list">
+                                <h5>Corporate Name</h5>
+                                <h4>Maria Jaqueline Cordeiro Goncalves</h4>
+                            </div>
+                            <div class="detail-list">
+                                <h5>Incorporation type or Legal Nature</h5>
+                                <h4>limited liability company</h4>
+                            </div>
+                            <div class="detail-list">
+                                <h5>Option by MEI</h5>
+                                <h4>No</h4>
+                            </div>
+                            <div class="detail-list">
+                                <h5>Size</h5>
+                                <h4>Micro Company</h4>
+                            </div>
+                            <div class="detail-list">
+                                <h5>Opening Date</h5>
+                                <h4>28/04/1999 (22 years, 6 months and 20 days)</h4>
+                            </div>
+                            <div class="detail-list">
+                                <h5>Simple option </h5>
+                                <h4>Yes</h4>
+                            </div>
+                            <div class="detail-list">
+                                <h5>Simple option date</h5>
+                                <h4>11/03/2005</h4>
+                            </div>
+                            <div class="detail-list">
+                                <h5>Type</h5>
+                                <h4>Headquarters</h4>
+                            </div>
+                            <div class="detail-list">
+                                <h5>Status / Situation</h5>
+                                <h4>Active</h4>
+                            </div>
+                            <div class="detail-list">
+                                <h5>Date Registration Status</h5>
+                                <h4>11/03/2005</h4>
+                            </div>
+                            <div class="detail-list">
+                                <h5>Simple option</h5>
+                                <h4>Yes</h4>
+                            </div>
+                            <div class="detail-list">
+                                <h5>Share capital</h5>
+                                <h4>BRL 50,000.00</h4>
+                            </div>
+                            <div class="detail-list">
+                                <h5>Fantasy name</h5>
+                                <h4>Relax</h4>
+                            </div>
+                            <div class="detail-list col-span-1 md:col-span-2">
+                                <h5>Reason for Registration Status</h5>
+                                <h4>Omission of Declarations</h4>
+                            </div>
+                            <div class="detail-list">
+                                <h5>Email</h5>
+                                <h4>*****@pe****.br</h4>
+                                <h4>*****@pe****.br</h4>
+                            </div>
+                            <div class="detail-list">
+                                <h5>Phone(s)</h5>
+                                <h4>(11) 2---4---44</h4>
+                                <h4>(11) 2---8---89</h4>
+                            </div>
+                            <div class="detail-list col-span-1 md:col-span-2">
+                                <h5>Address</h5>
+                                <h4>Petronet It Solutions LTDA <br>
+                                    <span class="font-bold">Public place:</span>  Rua Maria Carlota 815 <br/>
+                                    <span class="font-bold">Complement/Suit:</span> Room 01 <br/>
+                                    <span class="font-bold">Neighborhood:</span> Vila Esperanca, São Paulo SP <br/>
+                                    <span class="font-bold">County:</span> São Paulo <br/>
+                                    <span class="font-bold">State:</span> São Paulo <br/>
+                                    <span class="font-bold">Zip Code:</span> 03647-000</h4>
+     
+                            </div>
+                            <div class="detail-list col-span-1 md:col-span-2">
+                                <h5>Membership and Management</h5>
+                                <h4>Antonio Carlos Lopes - Managing Partner</h4>
+                                <h4> Fabio Petroni - Managing Partner</h4>      
+                            </div>
+                            <div class="detail-list col-span-1 md:col-span-2">
+                                <h5>Qualification of the person responsible for the company</h5>
+                                <h4>Managing Partner</h4>  
+                            </div>
+                            <div class="detail-list col-span-1 md:col-span-2">
+                                <h5 class="!mb-[10px]">Main Activity - CNAES</h5>
+                                <h3 class="font-bold mb-[20px]">47.51-2-01 - Specialized retail trade of computer equipment and supplies</h3> 
+                                <h3 class="font-bold mb-[20px]">This activity comprises:</h3>
+                                <ul class="mb-[20px]">
+                                    <li>- retail trade of computer equipment and materials such as:</li>
+                                    <li>- computers and peripherals (printers, drives, mice, video monitors, etc.</li>
+                                    <li>- computer supplies (optical disks and floppy disks, CD-Roms, toner cartridges for printers,) etc.)</li>
+                                    <li>- the retail trade of non-customizable computer programs</li>
+                                    <li>- the retail trade of parts and pieces for computer equipment</li>
+                   
+                                </ul>
+                                <h3 class="font-bold mb-[20px]">Activity descriptors:</h3>
+                                <h4>
+                                    Retail trade memory cards, Computer applications, retail trade of, Retail trade microcomputer supplies, Retail trade computer supplies, Retail trade continuous forms for computing, except preprinted, Retail trade of non-customizable computer programs, Retail trade software, Retail trade drives, pen-drives, mouse, Retail trade microcomputers, Computer advice associated with the sale of computers and peripherals, Retail trade computer peripherals, Retail trade computer equipment parts and accessories, Retail trade computer printers, Retail trade supplies for computers, Retail trade small computers,Retail trade media (virgin) for recording and reproduction of electronic files, Retail trade computer equipment, Retail trade computer keyboards, Retail trade microcomputers and peripherals, Retail trade video monitors, Retail trade computer plates, Retail trade of new cartridges for printers, Retail trade winchester, Retail trade accessories for computer equipment,Retail trade accessories for computer equipment,Retail trade accessories for computer equipment </h4>
+                                
+                            </div>
+                            <div class="detail-list col-span-1 md:col-span-2">
+                                <h5>Reason for Registration Status</h5>
+                                <ul >
+                                    <li>63.11-9-00 - Data processing, application service providers and internet hosting services</li>
+                                    <li>62.01-5-01 - Development of custom computer programs</li>
+                                    <li>62.09-1-00 - Technical support, maintenance and other information technology services </li>
+                                    <li>95.11-8-00 - Repair and maintenance of computers and peripheral equipment</li>
+                                </ul>
+                            </div>
+                        </div>
+                     </div>
+                    <div class="bg-white border border-[#D4D4D4] px-[15px] md:px-[27px] py-[20px] mb-[25px]">
+                        <div class="flex border-b border-[#A3A3A3] mb-[20px]">
+                            <h4 class="text-[16px] font-bold mb-[20px]">Company Representatives </h4>
+                        </div>
+                        <div class="text-[14px]">
+                            <h4 class="mb-[15px]">Nguyen Quoc Bao</h4>
+                            <h4>Nguyen Quoc Bao</h4>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-[#D4D4D4] px-[15px] md:px-[27px] py-[20px] mb-[25px]">
+                        <div class="flex border-b border-[#A3A3A3] mb-[30px]">
+                            <h4 class="text-[16px] font-bold mb-[20px]">Company Egazette Events </h4>
+                        </div>
+                        <div class="text-[14px] mb-[35px]">
+                             <h4 class="text-blue-gray mb-[7px]">1. New registration announcement</h4>
+                             <div class="flex flex-col md:flex-row">
+                                <h4 class="pl-[14px]  mb-[5px] md:mb-0">Announcement about establishment of new enterprise</h4>
+                                <h4 class="pl-[14px] md:pl-0 ml-0 md:ml-auto">Date: 2020-11-04</h4>
+                             </div>
+                        </div>
+                        <div class="text-[14px] mb-[10px]">
+                            <h4 class="text-blue-gray mb-[7px]">2.  Seal announcement</h4>
+                            <div class="flex flex-col md:flex-row">
+                               <h4 class="pl-[14px] mb-[5px] md:mb-0">Seal announcement</h4>
+                               <h4 class="pl-[14px] md:pl-0 ml-0 md:ml-auto">Date: 2020-11-04</h4>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="bg-white border border-[#D4D4D4] px-[15px] md:px-[27px] py-[20px] mb-[25px]">
+                        <div class="flex border-b border-[#A3A3A3] mb-[20px]">
+                            <h4 class="text-[16px] font-bold mb-[20px]">Company Activities </h4>
+                        </div>
+                         <ul class="pl-[10px] list-disc text-[14px] leading-[26px]">
+                             <li>Real estate agent, consultant activities;</li>
+                             <li>Wholesale of agricultural raw materials (except wood, bamboo) and live animals</li>
+                             <li>Wholesale of food</li>
+                             <li>Restaurants and mobile food service activities</li>
+                             <li>Beverage serving activities</li>
+                             <li>Retail sale of beverages in specialized stores</li>
+                             <li>Organization of conventions and trade shows</li>
+                             <li>Retail sale of sporting equipment in specialized stores</li>
+                             <li>Operation of sports facilities</li>
+ 
+                         </ul>
+                    </div>
+                    <div class="bg-white border border-[#D4D4D4] px-[15px] md:px-[27px] py-[20px] mb-[25px]">
+                        <div class="flex flex-col md:flex-row border-b border-[#A3A3A3] mb-[32px]">
+                            <div>
+                                <h4 class="text-[16px] font-bold mb-[6px]">User contributed information</h4>
+                                <p class="text-[14px] text-blue-gray mb-[10px] md:mb-[20px]">Information provided by users about  < company name> </p>
+                            </div>
+                            <div class="md:ml-auto mb-[20px] md:mb-0">
+                                <button class="border border-theme-green text-[14px] flex w-[153px] h-[28px] items-center text-theme-green justify-center rounded-[4px]"><img class="mr-[6px]" src="assets/images/edit.svg" alt="icon"> Add information</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-[25px]">
+                        <img src="assets/images/social.png" alt="social"/>
+                    </div>
+                    <div class="mb-[25px]">
+                        <a href="javascript:;" class="flex justify-between w-full h-[60px] md:h-[80px] text-[16px] md:text-[18px] font-bold text-theme-green duration-200 hover:text-theme-green-hovered border-2 border-dashed border-[#A3A3A3] bg-white items-center px-[15px] md:px-[27px]">
+                            <span>Get connected to the company</span>
+                            <img src="assets/images/get_connected.svg" alt="icon"/>
+                        </a>
+                    </div>
+
+                 </div>
+                 
+                 <div>
+                    <div class="bg-white border border-[#D4D4D4] mb-[14px]">
+                        <div class="border-b border-[#D4D4D4] p-[15px] md:p-[20px]">
+                            <h4 class="text-[14px] md:text-[16px] font-medium flex items-center mb-[4px] md:mb-[6px]"><span class="font-light">Standard delivery:</span> 1 working day 
+                                <a data-modal="report" class="inline-flex" href="javascript:;"><img class="ml-[5px]" src="assets/images/info.svg" alt="icon"/></a>   
+                           </h4>
+                           <a class="text-[14px] md:text-[16px] font-medium text-theme-green hover:text-theme-green-hovered duration-200" href="javascript:;">View sample reports</a>
+                        </div>
+                        <div class="checkbox">
+                            <input class="hidden" type="radio" name="company-details" id="standard" checked/>
+                            <label  for="standard">
+                               <div class="mr-[20px] md:mr-[40px]">
+                                   <h3 class="text-[16px] md:text-[18px] font-bold mb-[5px]">Standard Company Details</h3>
+                                   <p class="text-blue-gray text-[14px] leading-[23px]">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+                               </div>
+                               <h4 class="text-[16px] ml-auto font-bold">$2</h4>
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                           <input class="hidden" type="radio" name="company-details" id="inDepth"/>
+                           <label  for="inDepth">
+                              <div class="mr-[20px] md:mr-[40px]">
+                                  <h3 class="text-[16px] md:text-[18px] font-bold mb-[5px]">In-depth Company Details</h3>
+                                  <p class="text-blue-gray text-[14px] leading-[23px]">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+                              </div>
+                              <h4 class="text-[16px] ml-auto font-bold">$5</h4>
+                           </label>
+                       </div>
+                       <div class="flex py-[20px] pl-[51px] pr-[41px]">
+                           <h4 class="text-[16px] font-bold">Total</h4>
+                           <h4 class="text-[16px] ml-auto font-bold">$5</h4>
+                       </div>
+                       <button class="bg-theme-green duration-200 hover:bg-theme-green-hovered h-[63px] text-[18px] md:text-[20px] font-bold text-center text-white w-full">Add to cart</button>
+                    </div>
+                    <button class="mb-[45px] bg-white border border-[#D4D4D4] text-theme-green hover:text-theme-green-hovered duration-200 text-[18px] md:text-[20px] text-center h-[63px] w-full">Add another company</button>
+                    <div class="bg-white border border-[#D4D4D4] px-[15px] md:px-[27px] py-[20px]">
+                        <div class="flex border-b border-[#A3A3A3] mb-[15px]">
+                            <h4 class="text-[16px] font-bold mb-[20px]">Matching company names </h4>
+                        </div>
+                        <ul>
+                            <li>
+                                <a class="company-name" href="javascript:;">Indofood Sukses Makmur </a>
+                            </li>
+                            <li>
+                                <a class="company-name" href="javascript:;">Indocement Tunggal Prakarsa </a>
+                            </li>
+                            <li>
+                                <a class="company-name" href="javascript:;">Jasa Marga  </a>
+                            </li>
+                            <li>
+                                <a class="company-name" href="javascript:;">Kalbe Farma </a>
+                            </li>
+                            <li>
+                                <a class="company-name" href="javascript:;">Lippo Karawaci  </a>
+                            </li>
+                            <li>
+                                <a class="company-name" href="javascript:;">Matahari Department Store   </a>
+                            </li>
+                            <li>
+                                <a class="company-name" href="javascript:;">Indofood Sukses Makmur </a>
+                            </li>
+                            <li>
+                                <a class="company-name" href="javascript:;">Indocement Tunggal Prakarsa </a>
+                            </li>
+                            <li>
+                                <a class="company-name" href="javascript:;">Jasa Marga  </a>
+                            </li>
+                            <li>
+                                <a class="company-name" href="javascript:;">Kalbe Farma </a>
+                            </li>
+                            <li>
+                                <a class="company-name" href="javascript:;">Lippo Karawaci  </a>
+                            </li>
+                            <li>
+                                <a class="company-name" href="javascript:;">Matahari Department Store   </a>
+                            </li>
+                        </ul>
+                    </div>
+                 </div>
+                 
+             </div>
+        </div>
+    </section>
+    
+    <!-- footer stars here -->
+    <footer class="bg-dark-blue py-[20px]">
+        <div class="container ">
+            <div class="grid grid-cols-1 md:grid-cols-footer-md lg:grid-cols-footer-lg xl:grid-cols-footer   gap-x-[30px] xl:gap-x-[50px] 2xl:gap-x-[90px] gap-y-[25px] md:gap-y-[40px]">
+                <div class="order-5 xl:order-1 col-span-1 md:col-span-5 xl:col-span-1">
+                    <a href="home.html">
+                        <img class="w-[153px] md:w-[167px] mb-[18px]" src="assets/images/logo.png" alt="logo"/>
+                    </a>
+                    <p class="text-[#F9FAFB] text-[15px] leading-[21px] mb-[20px]">Companyfacts.com is a privately held company. We strive to provide verified company registration details, information like company size, shareholders, structure, financial performance, credit-worthiness, rating, risk assessment, patents, certifications, legal case or arbitration, company KYC, company performance analysis, and overall due diligence.</p>
+                    <ul class="flex mt-[30px] mb-[30px] xl:hidden">
+                        <li class="mr-[36px]">
+                            <a class="duration-200 hover:opacity-80" href="javascript:;">
+                                <img src="assets/images/social/Insta.svg" alt="social"/>
+                            </a>
+                        </li>
+                        <li class="mr-[36px]">
+                            <a class="duration-200 hover:opacity-80" href="javascript:;">
+                                <img src="assets/images/social/Twitter.svg" alt="social"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="duration-200 hover:opacity-80" href="javascript:;">
+                                <img src="assets/images/social/Facebook.svg" alt="social"/>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="text-[#D4D4D4] text-[14px] leading-[22px] font-light">© 2022 companiesfacts.com -  All Rights Reserved </p>
+                </div>
+                <div class="order-2 xl:order-2 flex flex-col">
+                    <h4 class="mb-[20px] text-[#9CA3AF] text-[18px]">Location</h4>
+                    <p class="text-[#F9FAFB] text-[15px] leading-[28px] mb-[20px]">9110 Av Pierre De Coubertin <br/>Montreal QC H1L 2H3Canada  </p>
+                    <ul class="hidden 2xl:flex justify-between mt-auto ">
+                        <li>
+                            <a class="duration-200 hover:opacity-80" href="javascript:;">
+                                <img src="assets/images/social/Insta.svg" alt="social"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="duration-200 hover:opacity-80" href="javascript:;">
+                                <img src="assets/images/social/Twitter.svg" alt="social"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="duration-200 hover:opacity-80" href="javascript:;">
+                                <img src="assets/images/social/Facebook.svg" alt="social"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-1 xl:order-3 flex flex-col">
+                    <h4 class="mb-[20px] text-[#9CA3AF] text-[18px]">Contact</h4>
+                    <ul>
+                        <li class="mb-[15px]">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="mailto:team@companiesfacts.com">
+                                <img class="mr-[13px]" src="assets/images/contact/email.svg" alt="contact"/> team@companiesfacts.com
+                            </a>
+                        </li>
+                        <li class="mb-[15px]">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                <img class="mr-[13px]" src="assets/images/contact/instant.svg" alt="contact"/> 24 x 7 (Instant Reply)
+                            </a>
+                        </li>
+                        <li class="mb-[15px]">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                <img class="mr-[13px]" src="assets/images/contact/watsapp.svg" alt="contact"/> +91-95603-30483
+                            </a>
+                        </li>
+                        <li class="mb-[15px]">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                <img class="mr-[13px]" src="assets/images/contact/call.svg" alt="contact"/> +91-95603-30483 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-3 xl:order-4 flex flex-col">
+                    <h4 class="mb-[20px] text-[#9CA3AF] text-[18px]">Markets</h4>
+                    <ul class="flex 2xl:block flex-wrap">
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 xl:w-full">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                <img class="mr-[9px]" src="assets/images/flag/indonesia.svg" alt="contact"/> Indonesia
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 xl:w-full">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                <img class="mr-[9px]" src="assets/images/flag/vietnam.svg" alt="contact"/> Vietnam
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 xl:w-full">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                <img class="mr-[9px]" src="assets/images/flag/singapore.svg" alt="contact"/> Singapore
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 xl:w-full">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                <img class="mr-[9px]" src="assets/images/flag/malaysia.svg" alt="contact"/> Malaysia
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 xl:w-full">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                <img class="mr-[9px]" src="assets/images/flag/philippines.svg" alt="contact"/> Philippines
+                            </a>
+                        </li>
+                         
+                    </ul>
+                </div>
+                <div class="order-4 xl:order-5 flex flex-col">
+                    <h4 class="mb-[20px] text-[#9CA3AF] text-[18px]">About</h4>
+                    <ul class="flex xl:block flex-wrap">
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 xl:w-full">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                About us
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 xl:w-full">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                Contact us
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 xl:w-full">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 xl:w-full">
+                            <a class="text-[#F9FAFB] text-[15px] flex duration-200 hover:text-theme-yellow" href="javascipt:;">
+                                T&C
+                            </a>
+                        </li>
+                      
+                         
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+   
+
+</body>
+
+</html>

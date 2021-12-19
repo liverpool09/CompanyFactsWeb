@@ -28,6 +28,9 @@ body {
     @apply max-w-[1390px] w-full px-[25px] mx-auto;
 }
 
+.container-xs-20 {
+    @apply px-[20px]  md:px-[25px];
+}
 
 .counter {
     @apply absolute text-light-white text-[12px] top-[-13px] right-[-3px];
@@ -147,4 +150,49 @@ section {
 }
 .h2 {
     @apply text-h2-md md:text-h2 font-bold;
+}
+.breadcrumb {
+    @apply flex flex-nowrap overflow-x-scroll overflow-y-hidden md:overflow-visible hide-scroll whitespace-nowrap;
+}
+
+.breadcrumb > li { 
+    @apply text-[14px] text-[#94A3B8] relative mr-[30px] after:absolute after:bg-arrow after:w-[5px] after:h-[8px] after:right-[-19px] after:top-[6px] last:after:hidden;
+}
+
+.breadcrumb > li > a { 
+    @apply font-medium text-theme-green hover:text-theme-green-hovered duration-200;
+}
+.detail-list {
+    @apply text-[14px] leading-[21px]
+}
+.detail-list > h5 {
+    @apply  text-blue-gray mb-[5px]
+}
+
+.checkbox {
+    @apply border-b border-[#D4D4D4]
+}
+
+.checkbox label { 
+    @apply flex py-[15px] pl-[51px] pr-[20px] md:pr-[41px] cursor-pointer bg-check bg-[left_18px_top_20px] bg-no-repeat  
+}
+
+.checkbox input:checked + label {
+    @apply bg-checked bg-light-green
+}
+
+.company-name {
+    @apply text-[14px] md:text-[16px] leading-[34px] text-theme-green duration-200 hover:text-theme-green-hovered;
+}
+
+.detail-section {
+    @apply py-[20px] md:py-[34px];
+}
+
+.modal {
+    @apply opacity-0 invisible;
+}
+
+.modal-show {
+    @apply opacity-100 visible;
 }
