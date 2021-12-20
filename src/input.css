@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    @apply font-themeFont font-normal text-font-color;
+    @apply font-themeFont font-normal text-neutral-900;
 }
 
 .container {
@@ -33,19 +33,19 @@ body {
 }
 
 .counter {
-    @apply absolute text-light-white text-[12px] top-[-13px] right-[-3px];
+    @apply absolute text-gray-50 text-[12px] top-[-13px] right-[-3px];
 }
 
 .cart.cart-active .counter {
-    @apply text-theme-yellow font-bold;
+    @apply text-amber-400 font-bold;
 }
 
 .cart svg path {
-    @apply fill-[#D1D5DB];
+    @apply fill-gray-300;
 }
 
 .cart.cart-active svg path {
-    @apply fill-theme-yellow;
+    @apply fill-amber-400;
 }
 
 ul.menu>li {
@@ -53,11 +53,11 @@ ul.menu>li {
 }
 
 ul.menu>li>a {
-    @apply text-light-white text-[16px] relative block duration-200 hover:text-theme-yellow;
+    @apply text-gray-50 text-[16px] relative block duration-200 hover:text-amber-400;
 }
 
 ul.menu>li.active>a {
-    @apply text-theme-yellow font-bold;
+    @apply text-amber-400 font-bold;
 }
 
 .search-sm {
@@ -65,7 +65,7 @@ ul.menu>li.active>a {
 }
 
 .search-sm-select>select {
-    @apply w-[106px] mr-[3px] bg-dark-blue  text-white px-[6px] text-[14px] focus:outline-none;
+    @apply w-[106px] mr-[3px] bg-gray-700  text-white px-[6px] text-[14px] focus:outline-none;
 }
 
 .search-sm-select>select>option {
@@ -85,37 +85,37 @@ section {
 }
 
 .search-list > label {
-    @apply text-[14px] md:text-[16px] font-medium px-[14px] py-[8px] text-theme-green border-x-2 border-t-2  md:border-x-4 md:border-t-4 border-transparent  cursor-pointer block relative;
+    @apply text-[14px] md:text-[16px] font-medium px-[14px] py-[8px] text-teal-600 border-x-2 border-t-2  md:border-x-4 md:border-t-4 border-transparent  cursor-pointer block relative;
 }
 
 .search-list input:checked + label {
-    @apply border-theme-green font-normal text-dark-blue bg-white after:content-[''] after:absolute after:w-full after:h-[4px] after:bg-white after:bottom-[-2px] md:after:bottom-[-4px] after:left-0 after:z-10;
+    @apply border-teal-600 font-normal text-gray-700 bg-white after:content-[''] after:absolute after:w-full after:h-[4px] after:bg-white after:bottom-[-2px] md:after:bottom-[-4px] after:left-0 after:z-10;
 }
  
 
 
 .search-box {
-    @apply w-full border-2 md:border-4 border-theme-green h-[58px]  md:h-[64px] flex justify-between items-center px-[11px] relative bg-white;
+    @apply w-full border-2 md:border-4 border-teal-600 h-[58px]  md:h-[64px] flex justify-between items-center px-[11px] relative bg-white;
 }
 .search-box > input { 
-    @apply grow focus:outline-none text-font-color text-[16px] md:text-[18px] font-light px-[9px];
+    @apply grow focus:outline-none text-neutral-900 text-[16px] md:text-[18px] font-light px-[9px];
 }
 
 .search-box > .submit-search { 
-    @apply bg-theme-green hover:bg-theme-green-hovered duration-200 uppercase w-[74px] md:w-[111px] h-[34px] md:h-[39px] font-bold text-[14px] md:text-[18px] text-white tracking-[0px] md:tracking-[2px] rounded-[4px];
+    @apply bg-teal-600 hover:bg-teal-700 duration-200 uppercase w-[74px] md:w-[111px] h-[34px] md:h-[39px] font-bold text-[14px] md:text-[18px] text-white tracking-[0px] md:tracking-[2px] rounded-[4px];
 } 
 
 .link-text
 {
-    @apply text-theme-green hover:text-theme-green-hovered duration-200 underline font-light text-[14px]  inline-block;
+    @apply text-teal-600 hover:text-teal-700 duration-200 underline font-light text-[14px]  inline-block;
 }
 
 
 .slide-next {
-    @apply bg-gradient-to-l  from-light-gray absolute w-[50px] h-[30px] top-[7px] right-0 z-10 flex items-center justify-end cursor-pointer md:hidden;
+    @apply bg-gradient-to-l  from-neutral-100 absolute w-[50px] h-[30px] top-[7px] right-0 z-10 flex items-center justify-end cursor-pointer md:hidden;
 }
 .search-results {
-    @apply absolute top-[56px] md:top-[60px] inset-x-[-2px] md:inset-x-[-4px] border border-[#9CA3AF] bg-white z-20;
+    @apply absolute top-[56px] md:top-[60px] inset-x-[-2px] md:inset-x-[-4px] border border-gray-400 bg-white z-20;
 }
 
 .search-results > ul {
@@ -123,19 +123,19 @@ section {
 }
 
 .search-results > ul > li{ 
-    @apply border-b border-[#9CA3AF] last:border-none;
+    @apply border-b border-gray-400 last:border-none;
 }
 
 .search-results > ul > li > a { 
-    @apply flex px-[15px] py-[9px] md:py-[12px] duration-200 hover:bg-light-white;
+    @apply flex px-[15px] py-[9px] md:py-[12px] duration-200 hover:bg-gray-50;
 }
 
 .search-results > ul > li > a > h5 {
-    @apply text-[14px] text-theme-green text-left truncate mr-[20px];
+    @apply text-[14px] text-teal-600 text-left truncate mr-[20px];
 }
 
 .badge {
-    @apply flex border border-[#9CA3AF] text-[#6B7280] text-[13px] h-[20px] items-center px-[10px] rounded-[20px] ml-auto md:ml-0 grow-0 shrink-0 ;
+    @apply flex border border-gray-400 text-gray-500 text-[13px] h-[20px] items-center px-[10px] rounded-[20px] ml-auto md:ml-0 grow-0 shrink-0 ;
 }
 
 .badge > img {
@@ -143,10 +143,10 @@ section {
 }
 
 .col-box {
-    @apply flex flex-col items-center text-center shadow-box p-[20px] border border-[#E5E5E5];
+    @apply flex flex-col items-center text-center shadow-box p-[20px] border border-neutral-200;
 }
 .paragraph {
-    @apply text-para-md md:text-para text-font-gray;
+    @apply text-para-md md:text-para text-neutral-600;
 }
 .h2 {
     @apply text-h2-md md:text-h2 font-bold;
@@ -156,21 +156,21 @@ section {
 }
 
 .breadcrumb > li { 
-    @apply text-[14px] text-[#94A3B8] relative mr-[30px] after:absolute after:bg-arrow after:w-[5px] after:h-[8px] after:right-[-19px] after:top-[6px] last:after:hidden;
+    @apply text-[14px] text-slate-400 relative mr-[30px] after:absolute after:bg-arrow after:w-[5px] after:h-[8px] after:right-[-19px] after:top-[6px] last:after:hidden;
 }
 
 .breadcrumb > li > a { 
-    @apply font-medium text-theme-green hover:text-theme-green-hovered duration-200;
+    @apply font-medium text-teal-600 hover:text-teal-700 duration-200;
 }
 .detail-list {
     @apply text-[14px] leading-[21px]
 }
 .detail-list > h5 {
-    @apply  text-blue-gray mb-[5px]
+    @apply  text-slate-400 mb-[5px]
 }
 
 .checkbox {
-    @apply border-b border-[#D4D4D4]
+    @apply border-b border-neutral-400
 }
 
 .checkbox label { 
@@ -182,7 +182,7 @@ section {
 }
 
 .company-name {
-    @apply text-[14px] md:text-[16px] leading-[34px] text-theme-green duration-200 hover:text-theme-green-hovered;
+    @apply text-[14px] md:text-[16px] leading-[34px] text-teal-600 duration-200 hover:text-teal-700;
 }
 
 .detail-section {

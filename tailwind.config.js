@@ -1,20 +1,21 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
     mode: 'jit',
     content: ['./**/*.html' /* ... */ ],
     darkMode: 'media', // or 'media' or 'class'
     theme: {
         colors: {
+            blue: colors.blue,
+            gray: colors.gray,
+            neutral: colors.neutral,
+            slate: colors.slate,
+            amber: colors.amber,
+            yellow: colors.yellow,
+            red: colors.red,
+            teal: colors.teal,
             'transparent': 'transparent',
             'white': '#FFFFFF',
-            'theme-yellow': '#FBBF24',
-            'dark-blue': '#374151',
-            'theme-green': '#0D9488',
-            'theme-green-hovered': '#0A7A70',
-            'font-color': '#171717',
-            'font-gray': '#525252',
-            'light-gray': '#F5F5F5',
-            'light-white': '#F9FAFB',
-            'blue-gray': '#94A3B8',
             'light-green': 'rgba(13, 148, 136, 0.05)',
             'backdrop': 'rgba(23, 23, 23, 0.8)',
         },
