@@ -20,25 +20,27 @@ module.exports = {
             'backdrop': 'rgba(23, 23, 23, 0.8)',
         },
         fontSize: {
-            'h1': ['34px', {
-                lineHeight: '44px',
-            }],
-            'h1-md': ['24px', {
-                lineHeight: '30px',
-            }],
-            'h2': ['28px', {
-                lineHeight: '40px',
-            }],
-            'h2-md': ['20px', {
-                lineHeight: '28px',
-            }],
-             
-            'para': ['16px', {
-                lineHeight: '26px',
-            }],
-            'para-md': ['14px', {
-                lineHeight: '24px',
-            }],
+            'xs': '12px',
+            'sm': '13px',
+            'md': '14px',
+            'tiny': '15px',
+            'base': '16px',
+            'xl': '17px',
+            '2xl': '18px',
+            '3xl': '19px',
+            '4xl': '20px',
+            '5xl': '22px',
+            '6xl': '24px',
+            '7xl': '28px',
+            '8xl': '34px',
+        },
+        lineHeight: {
+            '5': '24px',
+            '6': '26px',
+            '7': '28px',
+            '8': '30px',
+            '9': '40px',
+            '10': '44px', 
         },
         fontFamily: {
             themeFont: ['Roboto', 'sans-serif'],

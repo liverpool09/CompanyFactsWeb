@@ -33,7 +33,7 @@ body {
 }
 
 .counter {
-    @apply absolute text-gray-50 text-[12px] top-[-13px] right-[-3px];
+    @apply absolute text-gray-50 text-xs top-[-13px] right-[-3px];
 }
 
 .cart.cart-active .counter {
@@ -53,7 +53,7 @@ ul.menu>li {
 }
 
 ul.menu>li>a {
-    @apply text-gray-50 text-[16px] relative block duration-200 hover:text-amber-400;
+    @apply text-gray-50 text-base relative block duration-200 hover:text-amber-400;
 }
 
 ul.menu>li.active>a {
@@ -65,7 +65,7 @@ ul.menu>li.active>a {
 }
 
 .search-sm-select>select {
-    @apply w-[106px] mr-[3px] bg-gray-700  text-white px-[6px] text-[14px] focus:outline-none;
+    @apply w-[106px] mr-[3px] bg-gray-700  text-white px-[6px] text-md focus:outline-none;
 }
 
 .search-sm-select>select>option {
@@ -77,7 +77,7 @@ ul.menu>li.active>a {
 }
 
 .search-sm-box>input {
-    @apply bg-transparent text-[14px] pl-[9px] font-light text-white grow h-full focus:outline-none;
+    @apply bg-transparent text-md pl-[9px] font-light text-white grow h-full focus:outline-none;
 }
 
 section {
@@ -85,7 +85,7 @@ section {
 }
 
 .search-list > label {
-    @apply text-[14px] md:text-[16px] font-medium px-[14px] py-[8px] text-teal-600 border-x-2 border-t-2  md:border-x-4 md:border-t-4 border-transparent  cursor-pointer block relative;
+    @apply text-md md:text-base font-medium px-[14px] py-[8px] text-teal-600 border-x-2 border-t-2  md:border-x-4 md:border-t-4 border-transparent  cursor-pointer block relative;
 }
 
 .search-list input:checked + label {
@@ -98,16 +98,16 @@ section {
     @apply w-full border-2 md:border-4 border-teal-600 h-[58px]  md:h-[64px] flex justify-between items-center px-[11px] relative bg-white;
 }
 .search-box > input { 
-    @apply grow focus:outline-none text-neutral-900 text-[16px] md:text-[18px] font-light px-[9px];
+    @apply grow focus:outline-none text-neutral-900 text-base md:text-2xl font-light px-[9px];
 }
 
 .search-box > .submit-search { 
-    @apply bg-teal-600 hover:bg-teal-700 duration-200 uppercase w-[74px] md:w-[111px] h-[34px] md:h-[39px] font-bold text-[14px] md:text-[18px] text-white tracking-[0px] md:tracking-[2px] rounded-[4px];
+    @apply bg-teal-600 hover:bg-teal-700 duration-200 uppercase w-[74px] md:w-[111px] h-[34px] md:h-[39px] font-bold text-md md:text-2xl text-white tracking-[0px] md:tracking-[2px] rounded-[4px];
 } 
 
 .link-text
 {
-    @apply text-teal-600 hover:text-teal-700 duration-200 underline font-light text-[14px]  inline-block;
+    @apply text-teal-600 hover:text-teal-700 duration-200 underline font-light text-md  inline-block;
 }
 
 
@@ -131,11 +131,11 @@ section {
 }
 
 .search-results > ul > li > a > h5 {
-    @apply text-[14px] text-teal-600 text-left truncate mr-[20px];
+    @apply text-md text-teal-600 text-left truncate mr-[20px];
 }
 
 .badge {
-    @apply flex border border-gray-400 text-gray-500 text-[13px] h-[20px] items-center px-[10px] rounded-[20px] ml-auto md:ml-0 grow-0 shrink-0 ;
+    @apply flex border border-gray-400 text-gray-500 text-sm h-[20px] items-center px-[10px] rounded-[20px] ml-auto md:ml-0 grow-0 shrink-0 ;
 }
 
 .badge > img {
@@ -145,25 +145,21 @@ section {
 .col-box {
     @apply flex flex-col items-center text-center shadow-box p-[20px] border border-neutral-200;
 }
-.paragraph {
-    @apply text-para-md md:text-para text-neutral-600;
-}
-.h2 {
-    @apply text-h2-md md:text-h2 font-bold;
-}
+ 
+ 
 .breadcrumb {
     @apply flex flex-nowrap overflow-x-scroll overflow-y-hidden md:overflow-visible hide-scroll whitespace-nowrap;
 }
 
 .breadcrumb > li { 
-    @apply text-[14px] text-slate-400 relative mr-[30px] after:absolute after:bg-arrow after:w-[5px] after:h-[8px] after:right-[-19px] after:top-[6px] last:after:hidden;
+    @apply text-md text-slate-400 relative mr-[30px] after:absolute after:bg-arrow after:w-[5px] after:h-[8px] after:right-[-19px] after:top-[6px] last:after:hidden;
 }
 
 .breadcrumb > li > a { 
     @apply font-medium text-teal-600 hover:text-teal-700 duration-200;
 }
 .detail-list {
-    @apply text-[14px] leading-[21px]
+    @apply text-md leading-[21px]
 }
 .detail-list > h5 {
     @apply  text-slate-400 mb-[5px]
@@ -182,7 +178,7 @@ section {
 }
 
 .company-name {
-    @apply text-[14px] md:text-[16px] leading-[34px] text-teal-600 duration-200 hover:text-teal-700;
+    @apply text-md md:text-base leading-[34px] text-teal-600 duration-200 hover:text-teal-700;
 }
 
 .detail-section {

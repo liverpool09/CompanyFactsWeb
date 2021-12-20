@@ -929,47 +929,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.text-\[17px\]{
+.text-xl{
   font-size: 17px;
 }
 
-.text-\[16px\]{
+.text-base{
   font-size: 16px;
 }
 
-.text-\[14px\]{
+.text-md{
   font-size: 14px;
 }
 
-.text-\[12px\]{
+.text-xs{
   font-size: 12px;
 }
 
-.text-\[20px\]{
+.text-4xl{
   font-size: 20px;
 }
 
-.text-\[18px\]{
+.text-2xl{
   font-size: 18px;
 }
 
-.text-\[15px\]{
+.text-tiny{
   font-size: 15px;
 }
 
-.text-h1-md{
+.text-6xl{
   font-size: 24px;
-  line-height: 30px;
-}
-
-.text-para-md{
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.text-h2-md{
-  font-size: 20px;
-  line-height: 28px;
 }
 
 .font-bold{
@@ -1014,6 +1003,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-\[28px\]{
   line-height: 28px;
+}
+
+.leading-8{
+  line-height: 30px;
+}
+
+.leading-7{
+  line-height: 28px;
+}
+
+.leading-5{
+  line-height: 24px;
 }
 
 .text-neutral-500{
@@ -1561,33 +1562,6 @@ section{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.paragraph{
-  font-size: 14px;
-  line-height: 24px;
-  --tw-text-opacity: 1;
-  color: rgb(82 82 82 / var(--tw-text-opacity));
-}
-
-@media (min-width: 768px){
-  .paragraph{
-    font-size: 16px;
-    line-height: 26px;
-  }
-}
-
-.h2{
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 700;
-}
-
-@media (min-width: 768px){
-  .h2{
-    font-size: 28px;
-    line-height: 40px;
-  }
-}
-
 .breadcrumb{
   display: flex;
   flex-wrap: nowrap;
@@ -1928,35 +1902,40 @@ section{
     padding-left: 0px;
   }
 
-  .md\:text-\[22px\]{
-    font-size: 22px;
-  }
-
-  .md\:text-\[18px\]{
+  .md\:text-2xl{
     font-size: 18px;
   }
 
-  .md\:text-\[16px\]{
+  .md\:text-base{
     font-size: 16px;
   }
 
-  .md\:text-\[20px\]{
+  .md\:text-4xl{
     font-size: 20px;
   }
 
-  .md\:text-h1{
+  .md\:text-8xl{
     font-size: 34px;
+  }
+
+  .md\:text-7xl{
+    font-size: 28px;
+  }
+
+  .md\:text-5xl{
+    font-size: 22px;
+  }
+
+  .md\:leading-10{
     line-height: 44px;
   }
 
-  .md\:text-para{
-    font-size: 16px;
-    line-height: 26px;
+  .md\:leading-9{
+    line-height: 40px;
   }
 
-  .md\:text-h2{
-    font-size: 28px;
-    line-height: 40px;
+  .md\:leading-6{
+    line-height: 26px;
   }
 
   .md\:leading-\[28px\]{
