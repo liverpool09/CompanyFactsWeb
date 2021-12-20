@@ -35,6 +35,10 @@ module.exports = {
             '8xl': '34px',
         },
         lineHeight: {
+            'xl': '17px',
+            '2': '20px',
+            '3': '21px',
+            '4': '22px',
             '5': '24px',
             '6': '26px',
             '7': '28px',

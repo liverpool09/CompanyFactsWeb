@@ -977,7 +977,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600;
 }
 
-.leading-\[20px\]{
+.leading-2{
   line-height: 20px;
 }
 
@@ -993,15 +993,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 23px;
 }
 
-.leading-\[21px\]{
+.leading-3{
   line-height: 21px;
 }
 
-.leading-\[22px\]{
+.leading-4{
   line-height: 22px;
 }
 
-.leading-\[28px\]{
+.leading-7{
   line-height: 28px;
 }
 
@@ -1009,12 +1009,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 30px;
 }
 
-.leading-7{
-  line-height: 28px;
-}
-
 .leading-5{
   line-height: 24px;
+}
+
+.leading-xl{
+  line-height: 17px;
+}
+
+.leading-6{
+  line-height: 26px;
 }
 
 .text-neutral-500{
@@ -1902,6 +1906,10 @@ section{
     padding-left: 0px;
   }
 
+  .md\:text-5xl{
+    font-size: 22px;
+  }
+
   .md\:text-2xl{
     font-size: 18px;
   }
@@ -1922,10 +1930,6 @@ section{
     font-size: 28px;
   }
 
-  .md\:text-5xl{
-    font-size: 22px;
-  }
-
   .md\:leading-10{
     line-height: 44px;
   }
@@ -1938,7 +1942,7 @@ section{
     line-height: 26px;
   }
 
-  .md\:leading-\[28px\]{
+  .md\:leading-7{
     line-height: 28px;
   }
 }

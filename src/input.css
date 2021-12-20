@@ -159,7 +159,7 @@ section {
     @apply font-medium text-teal-600 hover:text-teal-700 duration-200;
 }
 .detail-list {
-    @apply text-md leading-[21px]
+    @apply text-md leading-3
 }
 .detail-list > h5 {
     @apply  text-slate-400 mb-[5px]
