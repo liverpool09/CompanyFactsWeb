@@ -16,6 +16,7 @@ module.exports = {
             teal: colors.teal,
             'transparent': 'transparent',
             'white': '#FFFFFF',
+            'black': '#000000',
             'light-green': 'rgba(13, 148, 136, 0.05)',
             'backdrop': 'rgba(23, 23, 23, 0.8)',
         },
@@ -31,8 +32,10 @@ module.exports = {
             '4xl': '20px',
             '5xl': '22px',
             '6xl': '24px',
+            '26': '26px',
             '7xl': '28px',
             '8xl': '34px',
+            '9xl': '36px',
         },
         lineHeight: {
             'xl': '17px',
@@ -52,6 +55,9 @@ module.exports = {
         extend: {
             boxShadow: {
                 'box': '0px 3px 4px 1px rgba(0, 0, 0, 0.18)',
+                'dropdown': '0px 4px 4px rgba(0, 0, 0, 0.25);',
+                'qoute' : '0px 4px 4px 1px rgba(0, 0, 0, 0.25)',
+                'input' : '0px 1px 1px rgba(0, 0, 0, 0.1)',
             },
             gridTemplateColumns: {
                 'footer': 'auto 192px 218px 117px 106px', 

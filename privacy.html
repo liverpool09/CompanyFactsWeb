@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Privacy</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+   
+
+    <!-- header stars here -->
+    <header class="bg-gray-700">
+        <div class="container">
+            <div class="flex justify-between items-center h-[57px]">
+                <a href="home.html">
+                    <img class="w-[139px] md:w-[210px]" src="assets/images/logo.png" alt="logo" />
+                </a>
+                <div id="navBar" class="flex flex-row items-center">
+                    <div class="search-sm">
+                        <div class="relative w-[135px] h-full flex items-center group">
+                            <div class="text-white text-md flex items-center px-[10px] cursor-pointer">
+                                <img src="assets/images/flag/singapore.svg" class="mr-[7px]" alt="flag"/> Singapore
+                                <span class="absolute right-[8px]">
+                                    <img src="assets/images/dropdown.svg" alt="icon"/>
+                                </span>
+                            </div>
+                            <ul class="absolute bg-gray-700 w-full top-[28px] opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-200 shadow-dropdown">
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;"><img class="mr-[7px]" src="assets/images/flag/indonesia.svg" alt="flag"/> Indonesia</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;"><img class="mr-[7px]" src="assets/images/flag/vietnam.svg" alt="flag"/> Vietnam</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;"><img class="mr-[7px]" src="assets/images/flag/malaysia.svg" alt="flag"/> Malaysia</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;"><img class="mr-[7px]" src="assets/images/flag/philippines.svg" alt="flag"/> Philippines</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="relative h-full">
+                            <div class="search-sm-box">
+                                <img src="assets/images/search.svg" alt="search">
+                                <input id="companyList" type="text" placeholder="type company name">
+                            </div>
+                            <ul id="searchResultSM" class="absolute bg-gray-700 w-full top-[28px] opacity-0 invisible duration-200 shadow-dropdown">
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;">some random company name 1</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;">some random company name 2</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;">some random company name 3</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;">some random company name 1</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;">some random company name 2</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;">some random company name 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <ul class="flex flex-row items-center menu">
+                        <li class="active hidden md:block">
+                            <a href="home.html">Home</a>
+                        </li>
+                        <li class="hidden md:block">
+                            <a href="javascript:;">About</a>
+                        </li>
+                        <li class="hidden md:block">
+                            <a href="javascript:;">Contact</a>
+                        </li>
+                        <li class="cart group cart-active">
+                            <a  href="javascript:;">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.75 0C0.551088 0 0.360322 0.0790178 0.21967 0.21967C0.0790178 0.360322 0 0.551088 0 0.75C0 0.948912 0.0790178 1.13968 0.21967 1.28033C0.360322 1.42098 0.551088 1.5 0.75 1.5H1.119C1.28186 1.50028 1.4402 1.55357 1.57009 1.6518C1.69999 1.75003 1.79438 1.88788 1.839 2.0445L4.218 10.3695C4.35255 10.8393 4.63641 11.2525 5.02665 11.5467C5.41689 11.8409 5.8923 12 6.381 12H13.2345C13.6843 12.0001 14.1237 11.8654 14.4962 11.6132C14.8686 11.3611 15.157 11.0031 15.324 10.5855L17.535 5.0565C17.6259 4.82899 17.6597 4.58268 17.6334 4.3391C17.6071 4.09551 17.5216 3.86208 17.3842 3.65919C17.2469 3.4563 17.062 3.29014 16.8456 3.17523C16.6292 3.06032 16.388 3.00015 16.143 3H3.672L3.2805 1.632C3.14629 1.16216 2.86277 0.748779 2.47281 0.454345C2.08285 0.15991 1.60763 0.000426552 1.119 0H0.75Z"/>
+                                    <path d="M6.75 18C7.04547 18 7.33806 17.9418 7.61104 17.8287C7.88402 17.7157 8.13206 17.5499 8.34099 17.341C8.54992 17.1321 8.71566 16.884 8.82873 16.611C8.9418 16.3381 9 16.0455 9 15.75C9 15.4545 8.9418 15.1619 8.82873 14.889C8.71566 14.616 8.54992 14.3679 8.34099 14.159C8.13206 13.9501 7.88402 13.7843 7.61104 13.6713C7.33806 13.5582 7.04547 13.5 6.75 13.5C6.15326 13.5 5.58097 13.7371 5.15901 14.159C4.73705 14.581 4.5 15.1533 4.5 15.75C4.5 16.3467 4.73705 16.919 5.15901 17.341C5.58097 17.7629 6.15326 18 6.75 18Z" />
+                                    <path d="M12.75 18C13.0455 18 13.3381 17.9418 13.611 17.8287C13.884 17.7157 14.1321 17.5499 14.341 17.341C14.5499 17.1321 14.7157 16.884 14.8287 16.611C14.9418 16.3381 15 16.0455 15 15.75C15 15.4545 14.9418 15.1619 14.8287 14.889C14.7157 14.616 14.5499 14.3679 14.341 14.159C14.1321 13.9501 13.884 13.7843 13.611 13.6713C13.3381 13.5582 13.0455 13.5 12.75 13.5C12.1533 13.5 11.581 13.7371 11.159 14.159C10.7371 14.581 10.5 15.1533 10.5 15.75C10.5 16.3467 10.7371 16.919 11.159 17.341C11.581 17.7629 12.1533 18 12.75 18Z" />
+                                </svg>
+                                <span class="counter">3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- privacy section starts here -->
+    <section class="bg-neutral-100 detail-section">
+        <div class="container container-xs-20">
+            <div class="bg-white border border-neutral-300 px-[15px] md:px-[27px] py-[20px] mb-[25px]">
+                <h2 class="text-5xl font-medium mt-[20px] mb-[30px]">Privacy Policy</h2>
+                <ol class="list-decimal text-4xl font-medium text-gray-600 pl-[20px]">
+                    <li class="mb-[50px]">
+                        <h3 class="mb-[15px]">Introduction</h3>
+                        <p class="text-tiny font-normal leading-6 mb-[10px]">IntroductionCompanies Facts (“us”, “we”, or “our”) operates https://companiesfacts.com (hereinafter referred to as “Service”).</p>
+                        <p class="text-tiny font-normal leading-6 mb-[20px]">Our Privacy Policy governs your visit to https://companiesfacts.com , and explains how we collect, safeguard and disclose information that results from your use of our Service.</p>
+                        <p class="text-tiny font-normal leading-6 mb-[20px]">We use your data to provide and improve Service. By using Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our Terms and Conditions.</p>
+                        <p class="text-tiny font-normal leading-6">Our Terms and Conditions (“Terms”) govern all use of our Service and together with the Privacy Policy constitutes your agreement with us (“agreement”).</p>
+                    </li>
+                    <li class="mb-[50px]">
+                        <h3 class="mb-[15px]">Definitions</h3>
+                        <p class="text-tiny font-normal leading-6 mb-[10px]"><b>SERVICE</b> means the https://companiesfacts.com website operated by Companies Facts.</p>
+                        <p class="text-tiny font-normal leading-6 mb-[10px]"><b>PERSONAL DATA</b>  means data about a living individual who can be identified from those data (or from those and other information either in our possession or likely to come into our possession).</p>
+                        <p class="text-tiny font-normal leading-6 mb-[10px]"><b>USAGE DATA</b> is data collected automatically either generated by the use of Service or from Service infrastructure itself (for example, the duration of a page visit).</p>
+                        <p class="text-tiny font-normal leading-6 mb-[10px]"><b>COOKIES</b> are small files stored on your device (computer or mobile device).</p>
+                        <p class="text-tiny font-normal leading-6 mb-[10px]"><b>DATA CONTROLLER</b> means a natural or legal person who (either alone or jointly or in common with other persons) determines the purposes for which and the manner in which any personal data are, or are to be, processed. For the purpose of this Privacy Policy, we are a Data Controller of your data.</p>
+                        <p class="text-tiny font-normal leading-6 mb-[10px]"><b>DATA PROCESSORS (OR SERVICE PROVIDERS)</b>  means any natural or legal person who processes the data on behalf of the Data Controller. We may use the services of various Service Providers in order to process your data more effectively.</p>
+                        <p class="text-tiny font-normal leading-6 mb-[10px]"><b>DATA SUBJECT</b> is any living individual who is the subject of Personal Data.</p>
+                        <p class="text-tiny font-normal leading-6"><b>THE USER</b> is the individual using our Service. The User corresponds to the Data Subject, who is the subject of Personal Data.</p>
+                    </li>
+                    <li class="mb-[50px]">
+                        <h3 class="mb-[15px]">Information Collection and Use</h3>
+                        <p class="text-tiny font-normal leading-6">We collect several different types of information for various purposes to provide and improve our Service to you.</p>
+                    </li>
+                    <li class="mb-[50px]">
+                        <h3 class="mb-[15px]">Types of data collected</h3>
+                        <h4 class="text-2xl mb-[10px]">Personal Data</h4>
+                        <p class="text-md font-normal leading-6  mb-[20px]">While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you (“Personal Data”). Personally identifiable information may include, but is not limited to:</p>
+                        <h4 class="text-2xl mb-[10px]">Email address</h4>
+                        <ul class="list-disc text-md font-normal leading-6 pl-[15px] mb-[10px]">
+                            <li>First name and last name</li>
+                            <li>Address, State, Province, ZIP/Postal code, City</li>
+                            <li>Cookies and Usage Data</li>
+                        </ul>
+                        <p class="text-md font-normal leading-6 mb-[20px]">We may use your Personal Data to contact you with newsletters, marketing or promotional materials and other information that may be of interest to you. You may opt out of receiving any, or all, of these communications from us by emailing at team@companiesfacts.com</p>
+                        <h4 class="text-2xl mb-[10px]">Usage Data</h4>
+                        <p class="text-md font-normal leading-6 mb-[10px]">We may also collect information that your browser sends whenever you visit our Service or when you access Service by or through a mobile device (<b>“Usage Data”</b>).</p>
+                        <p class="text-md font-normal leading-6 mb-[10px]">This Usage Data may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
+                        <p class="text-md font-normal leading-6 mb-[20px]">When you access Service with a mobile device, this Usage Data may include information such as the type of mobile device you use, your mobile device unique ID, the IP address of your mobile device, your mobile operating system, the type of mobile Internet browser you use, unique device identifiers and other diagnostic data.</p>
+                        <h4 class="text-2xl mb-[10px]">Tracking Cookies Data</h4>
+                        <p class="text-md font-normal leading-6 mb-[10px]">We use cookies and similar tracking technologies to track the activity on our Service and we hold certain information.</p>
+                        <p class="text-md font-normal leading-6 mb-[10px]">Cookies are files with a small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Other tracking technologies are also used such as beacons, tags and scripts to collect and track information and to improve and analyze our Service. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.</p>
+                        <p class="text-md font-normal leading-6 mb-[10px]">Examples of Cookies we use:</p>
+                        <ul class="list-disc text-md font-normal leading-6 pl-[15px]">
+                            <li><b>Session Cookies:</b> We use Session Cookies to operate our Service.</li>
+                            <li><b>Preference Cookies:</b> We use Preference Cookies to remember your preferences and various settings.</li>
+                            <li><b>Security Cookies:</b> We use Security Cookies for security purposes.</li>
+                            <li><b>Advertising Cookies:</b> Advertising Cookies are used to serve you with advertisements that may be relevant to you and your interests.</li>
+                        </ul>
+                    </li>
+                    <li class="mb-[50px]">
+                        <h3 class="mb-[15px]">Types of Data Collected</h3>
+                        <h4 class="text-2xl mb-[10px]">Personal Data</h4>
+                        <p class="text-md font-normal leading-6  mb-[10px]">CompaniesFacts.com uses the collected data for various purposes:</p>
+                        <h4 class="text-2xl mb-[10px]">Email address</h4>
+                        <ul class="list-disc text-md font-normal leading-6 pl-[15px]">
+                            <li>to provide and maintain our Service;</li>
+                            <li>to notify you about changes to our Service;</li>
+                            <li>to allow you to participate in interactive features of our Service when you choose to do so;</li>
+                            <li>to provide customer support;</li>
+                            <li>to gather analysis or valuable information so that we can improve our Service;</li>
+                            <li>to monitor the usage of our Service;</li>
+                            <li>to detect, prevent and address technical issues;</li>
+                            <li>to fulfill any other purpose for which you provide it;</li>
+                            <li>to carry out our obligations and enforce our rights arising from any contracts entered into between you and us, including for billing and collection;</li>
+                            <li>to provide you with notices about your account and/or subscription, including expiration and renewal notices, email-instructions, etc.;</li>
+                            <li>to provide you with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless you have opted not to receive such information;</li>
+                            <li>in any other way we may describe when you provide the information;</li>
+                            <li>for any other purpose with your consent.</li>
+                        </ul>
+                         
+                    </li>
+                </ol>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- footer stars here -->
+    <footer class="bg-gray-700 py-[20px]">
+        <div class="container ">
+            <div class="grid grid-cols-1 md:grid-cols-footer-md lg:grid-cols-footer-lg xl:grid-cols-footer   gap-x-[30px] xl:gap-x-[50px] 2xl:gap-x-[90px] gap-y-[25px] md:gap-y-[40px]">
+                <div class="order-5 xl:order-1 col-span-1 md:col-span-5 xl:col-span-1">
+                    <a href="home.html">
+                        <img class="w-[153px] md:w-[167px] mb-[18px]" src="assets/images/logo.png" alt="logo"/>
+                    </a>
+                    <p class="text-gray-50 text-tiny leading-3 mb-[20px]">Companyfacts.com is a privately held company. We strive to provide verified company registration details, information like company size, shareholders, structure, financial performance, credit-worthiness, rating, risk assessment, patents, certifications, legal case or arbitration, company KYC, company performance analysis, and overall due diligence.</p>
+                    <ul class="flex mt-[30px] mb-[30px] xl:hidden">
+                        <li class="mr-[36px]">
+                            <a class="duration-200 hover:opacity-80" href="javascript:;">
+                                <img src="assets/images/social/Insta.svg" alt="social"/>
+                            </a>
+                        </li>
+                        <li class="mr-[36px]">
+                            <a class="duration-200 hover:opacity-80" href="javascript:;">
+                                <img src="assets/images/social/Twitter.svg" alt="social"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="duration-200 hover:opacity-80" href="javascript:;">
+                                <img src="assets/images/social/Facebook.svg" alt="social"/>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="text-neutral-300 text-md leading-4 font-light">© 2022 companiesfacts.com -  All Rights Reserved </p>
+                </div>
+                <div class="order-2 xl:order-2 flex flex-col">
+                    <h4 class="mb-[20px] text-gray-400 text-2xl">Location</h4>
+                    <p class="text-gray-50 text-tiny leading-7 mb-[20px]">9110 Av Pierre De Coubertin <br/>Montreal QC H1L 2H3Canada  </p>
+                    <ul class="hidden 2xl:flex justify-between mt-auto ">
+                        <li>
+                            <a class="duration-200 hover:opacity-80" href="javascript:;">
+                                <img src="assets/images/social/Insta.svg" alt="social"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="duration-200 hover:opacity-80" href="javascript:;">
+                                <img src="assets/images/social/Twitter.svg" alt="social"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="duration-200 hover:opacity-80" href="javascript:;">
+                                <img src="assets/images/social/Facebook.svg" alt="social"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-1 xl:order-3 flex flex-col">
+                    <h4 class="mb-[20px] text-gray-400 text-2xl">Contact</h4>
+                    <ul>
+                        <li class="mb-[15px]">
+                            <a class="text-gray-50 text-tiny flex duration-200 hover:text-amber-400" href="mailto:team@companiesfacts.com">
+                                <img class="mr-[13px]" src="assets/images/contact/email.svg" alt="contact"/> team@companiesfacts.com
+                            </a>
+                        </li>
+                        <li class="mb-[15px]">
+                            <a class="text-gray-50 text-tiny flex duration-200 hover:text-amber-400" href="javascipt:;">
+                                <img class="mr-[13px]" src="assets/images/contact/instant.svg" alt="contact"/> 24 x 7 (Instant Reply)
+                            </a>
+                        </li>
+                        <li class="mb-[15px]">
+                            <a class="text-gray-50 text-tiny flex duration-200 hover:text-amber-400" href="javascipt:;">
+                                <img class="mr-[13px]" src="assets/images/contact/watsapp.svg" alt="contact"/> +91-95603-30483
+                            </a>
+                        </li>
+                        <li class="mb-[15px]">
+                            <a class="text-gray-50 text-tiny flex duration-200 hover:text-amber-400" href="javascipt:;">
+                                <img class="mr-[13px]" src="assets/images/contact/call.svg" alt="contact"/> +91-95603-30483 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-3 xl:order-4 flex flex-col">
+                    <h4 class="mb-[20px] text-gray-400 text-2xl">Markets</h4>
+                    <ul class="flex 2xl:block flex-wrap">
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 xl:w-full">
+                            <a class="text-gray-50 text-tiny flex duration-200 hover:text-amber-400" href="javascipt:;">
+                                <img class="mr-[9px]" src="assets/images/flag/indonesia.svg" alt="contact"/> Indonesia
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 xl:w-full">
+                            <a class="text-gray-50 text-tiny flex duration-200 hover:text-amber-400" href="javascipt:;">
+                                <img class="mr-[9px]" src="assets/images/flag/vietnam.svg" alt="contact"/> Vietnam
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 xl:w-full">
+                            <a class="text-gray-50 text-tiny flex duration-200 hover:text-amber-400" href="javascipt:;">
+                                <img class="mr-[9px]" src="assets/images/flag/singapore.svg" alt="contact"/> Singapore
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 xl:w-full">
+                            <a class="text-gray-50 text-tiny flex duration-200 hover:text-amber-400" href="javascipt:;">
+                                <img class="mr-[9px]" src="assets/images/flag/malaysia.svg" alt="contact"/> Malaysia
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 xl:w-full">
+                            <a class="text-gray-50 text-tiny flex duration-200 hover:text-amber-400" href="javascipt:;">
+                                <img class="mr-[9px]" src="assets/images/flag/philippines.svg" alt="contact"/> Philippines
+                            </a>
+                        </li>
+                         
+                    </ul>
+                </div>
+                <div class="order-4 xl:order-5 flex flex-col">
+                    <h4 class="mb-[20px] text-gray-400 text-2xl">About</h4>
+                    <ul class="flex xl:block flex-wrap">
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 xl:w-full">
+                            <a class="text-gray-50 text-tiny flex duration-200 hover:text-amber-400" href="javascipt:;">
+                                About us
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 xl:w-full">
+                            <a class="text-gray-50 text-tiny flex duration-200 hover:text-amber-400" href="javascipt:;">
+                                Contact us
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 xl:w-full">
+                            <a class="text-gray-50 text-tiny flex duration-200 hover:text-amber-400" href="javascipt:;">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li class="mb-[15px] w-1/2 md:w-full lg:w-1/2 xl:w-full">
+                            <a class="text-gray-50 text-tiny flex duration-200 hover:text-amber-400" href="javascipt:;">
+                                T&C
+                            </a>
+                        </li>
+                      
+                         
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+   
+
+</body>
+
+</html>

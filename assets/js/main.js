@@ -30,5 +30,17 @@
                      }
                 });
             }
+
+        // company result show header
+            if ($("#companyList").length > 0) {
+                $("#companyList").keyup(function(){
+                    if ($("#companyList").val().length > 0) {
+                        $("#searchResultSM").addClass("show");
+                    } 
+                    else {
+                        $("#searchResultSM").removeClass("show");
+                    }
+                }) 
+            }    
         });
      

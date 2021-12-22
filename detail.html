@@ -50,19 +50,55 @@
                 </a>
                 <div id="navBar" class="flex flex-row items-center">
                     <div class="search-sm">
-                        <div class="search-sm-select">
-                            <select>
-                                <option value="Singapore">Singapore</option>
-                                <option value="Indonesia">Indonesia</option>
-                                <option value="Vietnam">Vietnam</option>
-                                <option value="Philippines">Philippines</option>
-                                <option value="Malaysia">Malaysia</option>
-                            </select>
+                        <div class="relative w-[135px] h-full flex items-center group">
+                            <div class="text-white text-md flex items-center px-[10px] cursor-pointer">
+                                <img src="assets/images/flag/singapore.svg" class="mr-[7px]" alt="flag"/> Singapore
+                                <span class="absolute right-[8px]">
+                                    <img src="assets/images/dropdown.svg" alt="icon"/>
+                                </span>
+                            </div>
+                            <ul class="absolute bg-gray-700 w-full top-[28px] opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-200 shadow-dropdown">
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;"><img class="mr-[7px]" src="assets/images/flag/indonesia.svg" alt="flag"/> Indonesia</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;"><img class="mr-[7px]" src="assets/images/flag/vietnam.svg" alt="flag"/> Vietnam</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;"><img class="mr-[7px]" src="assets/images/flag/malaysia.svg" alt="flag"/> Malaysia</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;"><img class="mr-[7px]" src="assets/images/flag/philippines.svg" alt="flag"/> Philippines</a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="search-sm-box">
-                            <img src="assets/images/search.svg" alt="search">
-                            <input type="text" placeholder="type company name">
+                        <div class="relative h-full">
+                            <div class="search-sm-box">
+                                <img src="assets/images/search.svg" alt="search">
+                                <input id="companyList" type="text" placeholder="type company name">
+                            </div>
+                            <ul id="searchResultSM" class="absolute bg-gray-700 w-full top-[28px] opacity-0 invisible duration-200 shadow-dropdown">
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;">some random company name 1</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;">some random company name 2</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;">some random company name 3</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;">some random company name 1</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;">some random company name 2</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-md flex items-center px-[10px] py-[6px] hover duration-200 hover:bg-teal-600" href="javascirpt:;">some random company name 3</a>
+                                </li>
+                            </ul>
                         </div>
+                        
                     </div>
                     <ul class="flex flex-row items-center menu">
                         <!-- <li class="active hidden md:block">
